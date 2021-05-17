@@ -21,6 +21,9 @@ const Project = ({
     return;
   };
 
+  const lowResImage = {
+    background: `url(${imgSrc.slice(0, imgSrc.length - 4) + "-sd.jpg"}) no-repeat`,
+  };
   return (
     <div>
       <div className="project" onClick={showVideos}>
@@ -29,7 +32,7 @@ const Project = ({
             <h2>{projectTitle}</h2>
             <h3>{projectText}</h3>
           </div>
-          <img src={imgSrc} alt="" />
+          <img style={lowResImage} src={imgSrc} alt="" />
         </div>
       </div>
       <div className="project-gradient"></div>
