@@ -73,6 +73,7 @@ function App() {
   return (
     <>
       <div className={`about-me ${showAboutMe ? "" : "hidden"}`}>
+        {/* header */}
         <AboutMeSection
           myNameIs={true}
           vidSrc={"./images/Ryan Water Bender.png"}
@@ -83,6 +84,8 @@ function App() {
           setShowAboutMe={setShowAboutMe}
           scrollToContactMe={scrollToContactMe}
         />
+
+        {/* video editor */}
         <AboutMeSection
           myNameIs={false}
           vidSrc={"./videos/Video Editor Reel.mp4"}
@@ -93,19 +96,25 @@ function App() {
           setShowAboutMe={setShowAboutMe}
           scrollToContactMe={scrollToContactMe}
         />
+
+        {/* motion graphics */}
         <AboutMeSection
           myNameIs={false}
           vidSrc={"./videos/Motion Graphics Reel.mp4"}
-          body="I've won several awards for putting low par designs on shitty movies."
+          body="Animated motion graphics, title design, 3D design, motion tracking, and compositing are all examples of skills that I can utilize in taking any video to the next level."
           vidOrImage={true}
           buttons={false}
           showAboutMe={showAboutMe}
           setShowAboutMe={setShowAboutMe}
           scrollToContactMe={scrollToContactMe}
         />
+
         <ContactMe scrollToTop={scrollToTop} />
       </div>
       <div className={`my-work ${showAboutMe ? "hidden" : ""}`}>
+        <div className="bg bg2"></div>
+        <div className="bg bg3"></div>
+        <div className="bg bg4"></div>
         {/* video panel */}
         <VideoPanel videoPanelObject={videoPanelObject} setVideoPanelObject={setVideoPanelObject} />
 

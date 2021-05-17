@@ -20,6 +20,7 @@ const Project = ({
     }
     return;
   };
+
   return (
     <div>
       <div className="project" onClick={showVideos}>

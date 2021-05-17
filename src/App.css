@@ -139,7 +139,7 @@ body {
 .about-me-container i {
   animation: chevronDownAnim 2s ease infinite;
   position: absolute;
-  bottom: 2%;
+  bottom: 10%;
   font-size: 200%;
   text-align: center;
   color: rgb(182, 182, 182);
@@ -178,7 +178,7 @@ body {
   color: var(--main-text-color);
   text-align: center;
   z-index: 1;
-  background: linear-gradient(180deg, #2c3e509a, #0c1014);
+  background: linear-gradient(180deg, #2c3e50, #202b36);
 }
 .email,
 .message {
@@ -231,6 +231,38 @@ body {
 /* ________________________________________ */
 /* __________My Work section_______________ */
 /* ________________________________________ */
+
+/* Backgrounds _________________________ */
+.bg {
+  animation: slide 5s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, rgba(0, 193, 103, 0.411) 50%, #2c3e50 50%);
+  bottom: 0;
+  left: -50%;
+  opacity: 0.5;
+  position: fixed;
+  right: -50%;
+  top: 0;
+  z-index: -100;
+}
+.bg2 {
+  animation-direction: alternate-reverse;
+  animation-duration: 6s;
+}
+.bg3 {
+  animation-duration: 7s;
+}
+.bg4 {
+  animation-duration: 10s;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(-25%);
+  }
+  100% {
+    transform: translateX(25%);
+  }
+}
 
 /* Tags _________________________ */
 #tag-container {
@@ -556,7 +588,7 @@ body {
   }
   100% {
     opacity: 0;
-    transform: translateY(75%);
+    transform: translateY(250%);
   }
 }
 @keyframes videoPanelSwipeIn {
