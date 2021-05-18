@@ -1,13 +1,6 @@
 import React from "react";
 
-const Project = ({
-  projectTitle,
-  projectText,
-  imgSrc,
-  projectVideos,
-  videoPanelObject,
-  setVideoPanelObject,
-}) => {
+const Project = ({ projectTitle, projectText, imgSrc, projectVideos, videoPanelObject, setVideoPanelObject }) => {
   const showVideos = () => {
     if (videoPanelObject.hidden === true) {
       setVideoPanelObject({
@@ -23,6 +16,8 @@ const Project = ({
 
   const lowResImage = {
     background: `url(${imgSrc.slice(0, imgSrc.length - 4) + "-sd.jpg"}) no-repeat`,
+    backgroundRepeat: no - repeat,
+    backgroundSize: cover,
   };
   return (
     <div>
