@@ -25,8 +25,7 @@ const Project = ({
     // background: `url(${imgSrc.slice(0, imgSrc.length - 4) + "-sd.jpg"}) no-repeat`,
     background:
       "url(https://raw.githubusercontent.com/github/explore/6c6508f34230f0ac0d49e847a326429eefbfc030/topics/css/css.png) no-repeat",
-    backgroundRepeat: no - repeat,
-    backgroundSize: cover,
+    backgroundSize: "cover",
   };
   return (
     <div>
