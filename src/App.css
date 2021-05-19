@@ -441,6 +441,16 @@ body {
   grid-row: 3/3;
 }
 
+/* award lottie */
+.award-lottie {
+  width: 125px;
+  height: 125px;
+  position: absolute;
+  left: 50%;
+  bottom: 5%;
+  transform: translateX(-50%);
+  z-index: 20;
+}
 /* Video Panel _________________________ */
 .video-panel {
   position: fixed;

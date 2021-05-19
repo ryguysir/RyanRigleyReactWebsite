@@ -25,6 +25,7 @@ function App() {
     "Comedy",
     "Historical",
     "Awards",
+    "Favorites",
     "Browse All",
   ];
   const projects = require("./modules/projectCreator");
@@ -143,6 +144,7 @@ function App() {
         <div id="project-holder">
           {projectTagSort().map((project) => (
             <Project
+              award={project.award}
               projectTitle={project.projectTitle}
               projectText={project.projectText}
               imgSrc={project.imgSrc}

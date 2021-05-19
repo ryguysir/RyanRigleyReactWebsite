@@ -1,5 +1,7 @@
 import React from "react";
 
+import AwardLottie from "./AwardLottie";
+
 const Project = ({
   projectTitle,
   projectText,
@@ -7,6 +9,7 @@ const Project = ({
   projectVideos,
   videoPanelObject,
   setVideoPanelObject,
+  award,
 }) => {
   const showVideos = () => {
     if (videoPanelObject.hidden === true) {
@@ -24,12 +27,13 @@ const Project = ({
   const lowResImage = {
     background: `url(${imgSrc.slice(0, imgSrc.length - 4) + "-sd.jpg"}) no-repeat`,
 
-    "background-size": "cover",
-    "background-position": "center",
+    backgroundSize: "cover",
+    backgroundPosition: "center",
   };
   return (
     <div>
       <div className="project" onClick={showVideos}>
+        <AwardLottie award={award} />
         <div className="project-text-and-img-holder">
           <div className="project-text">
             <h2>{projectTitle}</h2>

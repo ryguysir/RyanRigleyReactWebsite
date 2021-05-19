@@ -5,6 +5,7 @@ function ProjectObject() {
   this.imgSrc = "";
   this.projectTags = [];
   this.projectVideos = [];
+  this.award = "";
 }
 
 let agent47 = new ProjectObject();
@@ -95,6 +96,7 @@ extinction.projectTags = [
   "extinction",
   "netflix",
   "browse all",
+  "favorites",
 ];
 extinction.projectVideos = ["279750518"];
 projects.push(extinction);
@@ -229,6 +231,7 @@ microsoft365MobileProductivity.projectTags = [
   "technology",
   "Microsoft M365 Mobile Productivity",
   "browse all",
+  "favorites",
 ];
 microsoft365MobileProductivity.projectVideos = ["516839250"];
 projects.push(microsoft365MobileProductivity);
@@ -304,7 +307,13 @@ let microsoftBuildingBuild = new ProjectObject();
 microsoftBuildingBuild.projectTitle = "Building Build";
 microsoftBuildingBuild.projectText = "Editor / Motion Graphics";
 microsoftBuildingBuild.imgSrc = "images/microsoftBuildingBuild.jpg";
-microsoftBuildingBuild.projectTags = ["corporate", "technology", "Building Build", "browse all"];
+microsoftBuildingBuild.projectTags = [
+  "corporate",
+  "technology",
+  "Building Build",
+  "browse all",
+  "favorites",
+];
 microsoftBuildingBuild.projectVideos = ["521752909"];
 projects.push(microsoftBuildingBuild);
 
@@ -376,8 +385,17 @@ let narcosMexico = new ProjectObject();
 narcosMexico.projectTitle = "Narcos: Mexico";
 narcosMexico.projectText = "Editor";
 narcosMexico.imgSrc = "images/narcosMexico.jpg";
-narcosMexico.projectTags = ["drama", "action", "netflix", "historical", "browse all"];
+narcosMexico.projectTags = [
+  "drama",
+  "action",
+  "netflix",
+  "historical",
+  "browse all",
+  "awards",
+  "favorites",
+];
 narcosMexico.projectVideos = ["292769952"];
+narcosMexico.award = "key";
 projects.push(narcosMexico);
 
 //___________________________________________________________________________________
@@ -394,6 +412,8 @@ narcosS1.projectTags = [
   "Narcos S1",
   "Narcos: Season 1",
   "browse all",
+  "awards",
+  "favorites",
 ];
 narcosS1.projectVideos = [
   "208256474",
@@ -405,6 +425,7 @@ narcosS1.projectVideos = [
   "208256504",
   "208256434",
 ];
+narcosS1.award = "key";
 projects.push(narcosS1);
 
 //___________________________________________________________________________________
@@ -421,8 +442,11 @@ narcosS2.projectTags = [
   "netflix",
   "historical",
   "browse all",
+  "awards",
+  "favorites",
 ];
 narcosS2.projectVideos = ["208770645", "208770547", "208770473"];
+narcosS2.award = "golden";
 projects.push(narcosS2);
 
 //___________________________________________________________________________________
@@ -539,8 +563,9 @@ let rampage = new ProjectObject();
 rampage.projectTitle = "Rampage";
 rampage.projectText = "Editor";
 rampage.imgSrc = "images/rampage.jpg";
-rampage.projectTags = ["action", "sci-fi", "horror", "rampage", "browse all"];
+rampage.projectTags = ["action", "sci-fi", "horror", "rampage", "browse all", "awards"];
 rampage.projectVideos = ["272281886", "272282009", "272281838"];
+rampage.award = "key";
 projects.push(rampage);
 
 //___________________________________________________________________________________
@@ -569,7 +594,7 @@ let sapSizzle = new ProjectObject();
 sapSizzle.projectTitle = "SAP Sizzle";
 sapSizzle.projectText = "Editor / Motion Graphics";
 sapSizzle.imgSrc = "images/sapSizzle.jpg";
-sapSizzle.projectTags = ["corporate", "SAP Sizzle", "Indigo Slate", "browse all"];
+sapSizzle.projectTags = ["corporate", "SAP Sizzle", "Indigo Slate", "browse all", "favorites"];
 sapSizzle.projectVideos = ["525680252"];
 projects.push(sapSizzle);
 
@@ -589,7 +614,16 @@ let shazam = new ProjectObject();
 shazam.projectTitle = "Shazam!";
 shazam.projectText = "Editor";
 shazam.imgSrc = "images/shazam.jpg";
-shazam.projectTags = ["comedy", "action", "adventure", "sci-fi", "shazam", "shazam!", "browse all"];
+shazam.projectTags = [
+  "comedy",
+  "action",
+  "adventure",
+  "sci-fi",
+  "shazam",
+  "shazam!",
+  "browse all",
+  "favorites",
+];
 shazam.projectVideos = ["281502145"];
 projects.push(shazam);
 
@@ -599,7 +633,7 @@ let skypeMeetNow = new ProjectObject();
 skypeMeetNow.projectTitle = "Skype Meet Now";
 skypeMeetNow.projectText = "Editor / Motion Graphics";
 skypeMeetNow.imgSrc = "images/skypeMeetNow.jpg";
-skypeMeetNow.projectTags = ["corporate", "Skype Meet Now", "browse all"];
+skypeMeetNow.projectTags = ["corporate", "Skype Meet Now", "browse all", "favorites"];
 skypeMeetNow.projectVideos = ["475257653"];
 projects.push(skypeMeetNow);
 
@@ -637,8 +671,9 @@ let theGetDown = new ProjectObject();
 theGetDown.projectTitle = "The Get Down";
 theGetDown.projectText = "Editor";
 theGetDown.imgSrc = "images/theGetDown.jpg";
-theGetDown.projectTags = ["drama", "historical", "romance", "The Get Down", "browse all"];
+theGetDown.projectTags = ["drama", "historical", "romance", "The Get Down", "browse all", "awards"];
 theGetDown.projectVideos = ["208769604"];
+theGetDown.award = "key";
 projects.push(theGetDown);
 
 //___________________________________________________________________________________
@@ -733,8 +768,11 @@ theSecretLifeofWalterMitty.projectTags = [
   "comedy",
   "The Secret Life of Walter Mitty",
   "browse all",
+  "awards",
+  "favorites",
 ];
 theSecretLifeofWalterMitty.projectVideos = ["208428637", "208428618"];
+theSecretLifeofWalterMitty.award = "key";
 projects.push(theSecretLifeofWalterMitty);
 
 //___________________________________________________________________________________
@@ -743,8 +781,9 @@ let theWolverine = new ProjectObject();
 theWolverine.projectTitle = "The Wolverine";
 theWolverine.projectText = "Editor / Motion Graphics";
 theWolverine.imgSrc = "images/theWolverine.jpg";
-theWolverine.projectTags = ["action", "sci-fi", "drama", "The Wolverine", "browse all"];
+theWolverine.projectTags = ["action", "sci-fi", "drama", "The Wolverine", "browse all", "awards"];
 theWolverine.projectVideos = ["208427854", "208427841"];
+theWolverine.award = "key";
 projects.push(theWolverine);
 
 //___________________________________________________________________________________
@@ -763,7 +802,7 @@ let xMenDaysOfFuturePast = new ProjectObject();
 xMenDaysOfFuturePast.projectTitle = "Xmen Days of Future Past";
 xMenDaysOfFuturePast.projectText = "Editor / Motion Graphics";
 xMenDaysOfFuturePast.imgSrc = "images/xMenDaysOfFuturePast.jpg";
-xMenDaysOfFuturePast.projectTags = ["Xmen Days of Future Past", "browse all"];
+xMenDaysOfFuturePast.projectTags = ["Xmen Days of Future Past", "browse all", "awards"];
 xMenDaysOfFuturePast.projectVideos = [
   "208222198",
   "208222240",
@@ -771,6 +810,7 @@ xMenDaysOfFuturePast.projectVideos = [
   "208222253",
   "208222158",
 ];
+xMenDaysOfFuturePast.award = "key";
 projects.push(xMenDaysOfFuturePast);
 
 //___________________________________________________________________________________
