@@ -24,6 +24,11 @@ body {
 /* __________About Me section_______________ */
 /* ________________________________________ */
 
+/* my logo */
+#ryan-rigley-logo {
+  margin-bottom: -20%;
+}
+
 /* section _________________________*/
 .about-me {
   height: 100vh;
