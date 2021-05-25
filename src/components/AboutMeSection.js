@@ -17,11 +17,17 @@ const AboutMeSection = ({
     <div>
       <div className="about-me-section">
         <div className="about-me-container">
-          {/* <div className={`my-name-is ${myNameIs ? "" : "hidden"}`}>
+          <div className={`my-name-is ${myNameIs ? "" : "hidden"}`}>
             <h1>HELLO</h1>
             <h2>MY NAME IS</h2>
-          </div> */}
-          <img id="ryan-rigley-logo" src="./Ryan Rigley Logo.svg" />
+          </div>
+          {/* <object
+            className={`ryan-rigley-logo ${myNameIs ? "" : "hidden"}`}
+            data="./Ryan Rigley Logo.svg"
+          >
+            {" "}
+          </object> */}
+
           <h3>{body}</h3>
           <div className={`bttn-holder ${buttons ? "" : "hidden"}`}>
             <div onClick={viewMyWork} className="about-me-bttn">

@@ -12,7 +12,7 @@ let agent47 = new ProjectObject();
 agent47.projectTitle = "Hitman: Agent 47";
 agent47.projectText = "Editor";
 agent47.imgSrc = "images/agent47.jpg";
-agent47.projectTags = ["action", "agent 47", "Hitman: Agent 47", "browse all"];
+agent47.projectTags = ["action", "agent 47", "Hitman: Agent 47", "browse all", "20th"];
 agent47.projectVideos = ["209509693"];
 projects.push(agent47);
 
@@ -22,7 +22,14 @@ let assassinsCreed = new ProjectObject();
 assassinsCreed.projectTitle = "Assassins Creed";
 assassinsCreed.projectText = "Editor";
 assassinsCreed.imgSrc = "images/assassinsCreed.jpg";
-assassinsCreed.projectTags = ["action", "adventure", "sci-fi", "Assassins Creed", "browse all"];
+assassinsCreed.projectTags = [
+  "action",
+  "adventure",
+  "sci-fi",
+  "Assassins Creed",
+  "browse all",
+  "20th",
+];
 assassinsCreed.projectVideos = ["209163244", "209163276"];
 projects.push(assassinsCreed);
 
@@ -32,7 +39,7 @@ let aVeryMurrayChristmas = new ProjectObject();
 aVeryMurrayChristmas.projectTitle = "A Very Murray Christmas";
 aVeryMurrayChristmas.projectText = "Editor / Motion Graphics";
 aVeryMurrayChristmas.imgSrc = "images/aVeryMurrayChristmas.jpg";
-aVeryMurrayChristmas.projectTags = ["comedy", "A Very Murray Christmas", "browse all"];
+aVeryMurrayChristmas.projectTags = ["comedy", "A Very Murray Christmas", "browse all", "netflix"];
 aVeryMurrayChristmas.projectVideos = ["209141658", "209141623", "209141581"];
 projects.push(aVeryMurrayChristmas);
 
@@ -42,7 +49,7 @@ let boschS2 = new ProjectObject();
 boschS2.projectTitle = "Bosch Season 2";
 boschS2.projectText = "Editor / Motion Graphics";
 boschS2.imgSrc = "images/boschSeason2.jpg";
-boschS2.projectTags = ["action", "drama", "Bosch S2", "Bosch Season 2", "browse all"];
+boschS2.projectTags = ["action", "drama", "Bosch S2", "Bosch Season 2", "browse all", "prime"];
 boschS2.projectVideos = ["209163500", "209163424", "209163500"];
 projects.push(boschS2);
 
@@ -59,7 +66,7 @@ dawnOfThePlanetOfTheApes.projectTags = [
   "Dawn of the Planet of the Apes",
   "browse all",
 ];
-dawnOfThePlanetOfTheApes.projectVideos = ["209163648", "209163616", "209163695"];
+dawnOfThePlanetOfTheApes.projectVideos = ["209163648", "209163616", "209163695", "20th"];
 projects.push(dawnOfThePlanetOfTheApes);
 
 //___________________________________________________________________________________
@@ -68,7 +75,7 @@ let dellTechnologiesWorld = new ProjectObject();
 dellTechnologiesWorld.projectTitle = "Dell Technologies World";
 dellTechnologiesWorld.projectText = "Editor / Motion Graphics";
 dellTechnologiesWorld.imgSrc = "images/dellTechnologiesWorld.jpg";
-dellTechnologiesWorld.projectTags = ["corporate", "Dell Technologies World", "browse all"];
+dellTechnologiesWorld.projectTags = ["corporate", "Dell Technologies World", "browse all", "dell"];
 dellTechnologiesWorld.projectVideos = ["363467805", "363467702"];
 projects.push(dellTechnologiesWorld);
 
@@ -78,7 +85,14 @@ let eddieTheEagle = new ProjectObject();
 eddieTheEagle.projectTitle = "Eddie The Eagle";
 eddieTheEagle.projectText = "Editor";
 eddieTheEagle.imgSrc = "images/eddieTheEagle.jpg";
-eddieTheEagle.projectTags = ["adventure", "comedy", "historical", "Eddie The Eagle", "browse all"];
+eddieTheEagle.projectTags = [
+  "adventure",
+  "comedy",
+  "historical",
+  "Eddie The Eagle",
+  "browse all",
+  "20th",
+];
 eddieTheEagle.projectVideos = ["209163863", "209163824"];
 projects.push(eddieTheEagle);
 
@@ -114,6 +128,7 @@ fantasticBeasts.projectTags = [
   "sci-fi",
   "Fantastic Beasts and Where to Find Them",
   "browse all",
+  "disney",
 ];
 fantasticBeasts.projectVideos = ["209163920"];
 projects.push(fantasticBeasts);
@@ -124,19 +139,19 @@ let ifIStay = new ProjectObject();
 ifIStay.projectTitle = "If I Stay";
 ifIStay.projectText = "Editor / Motion Graphics";
 ifIStay.imgSrc = "images/ifIStay.jpg";
-ifIStay.projectTags = ["drama", "romance", "sci-fi", "ifIStay", "browse all"];
+ifIStay.projectTags = ["drama", "romance", "sci-fi", "ifIStay", "browse all", "20th"];
 ifIStay.projectVideos = ["209163980"];
 projects.push(ifIStay);
 
 //___________________________________________________________________________________
 
 let indigoSlateDesignLedThinking = new ProjectObject();
-indigoSlateDesignLedThinking.projectTitle = "Indigo Slate Design Led Thinking";
+indigoSlateDesignLedThinking.projectTitle = "indigo slate Design Led Thinking";
 indigoSlateDesignLedThinking.projectText = "Editor / Motion Graphics";
 indigoSlateDesignLedThinking.imgSrc = "images/indigoSlateDesignLedThinking.jpg";
 indigoSlateDesignLedThinking.projectTags = [
   "corporate",
-  "indigo Slate",
+  "indigo slate",
   "Design Led Thinking",
   "browse all",
 ];
@@ -146,12 +161,12 @@ projects.push(indigoSlateDesignLedThinking);
 //___________________________________________________________________________________
 
 let indigoSlateEverywhereExperiences = new ProjectObject();
-indigoSlateEverywhereExperiences.projectTitle = "Indigo Slate Everywhere Experiences";
+indigoSlateEverywhereExperiences.projectTitle = "indigo slate Everywhere Experiences";
 indigoSlateEverywhereExperiences.projectText = "Editor / Motion Graphics";
 indigoSlateEverywhereExperiences.imgSrc = "images/indigoSlateEverywhereExperiences.jpg";
 indigoSlateEverywhereExperiences.projectTags = [
   "corporate",
-  "indigo Slate",
+  "indigo slate",
   "Everywhere Experiences",
   "browse all",
 ];
@@ -164,7 +179,13 @@ let jackRyan = new ProjectObject();
 jackRyan.projectTitle = "Jack Ryan Shadow Recruit";
 jackRyan.projectText = "Editor";
 jackRyan.imgSrc = "images/jackRyanShadowRecruit.jpg";
-jackRyan.projectTags = ["action", "adventure", "Jack Ryan Shadow Recruit", "browse all"];
+jackRyan.projectTags = [
+  "action",
+  "adventure",
+  "Jack Ryan Shadow Recruit",
+  "browse all",
+  "paramount",
+];
 jackRyan.projectVideos = ["125547875"];
 projects.push(jackRyan);
 
@@ -181,6 +202,7 @@ johnHenry.projectTags = [
   "historical",
   "John Henry and the Statesmen",
   "browse all",
+  "seven bucks",
 ];
 johnHenry.projectVideos = ["312820873"];
 projects.push(johnHenry);
@@ -191,7 +213,7 @@ let joy = new ProjectObject();
 joy.projectTitle = "joy";
 joy.projectText = "Editor / Motion Graphics";
 joy.imgSrc = "images/joy.jpg";
-joy.projectTags = ["historical", "drama", "joy", "browse all"];
+joy.projectTags = ["historical", "drama", "joy", "browse all", "20th"];
 joy.projectVideos = ["209164131", "209164107"];
 projects.push(joy);
 
@@ -201,7 +223,7 @@ let logan = new ProjectObject();
 logan.projectTitle = "Logan";
 logan.projectText = "Editor";
 logan.imgSrc = "images/logan.jpg";
-logan.projectTags = ["drama", "action", "sci-fi", "Logan", "browse all"];
+logan.projectTags = ["drama", "action", "sci-fi", "Logan", "browse all", "20th"];
 logan.projectVideos = ["208255115", "208255125", "209509332", "209509303"];
 projects.push(logan);
 
@@ -212,6 +234,7 @@ microsoft365Deployment.projectTitle = "Microsoft 365 Deployment";
 microsoft365Deployment.projectText = "Editor / Motion Graphics";
 microsoft365Deployment.imgSrc = "images/microsoft365Deployment.jpg";
 microsoft365Deployment.projectTags = [
+  "microsoft",
   "corporate",
   "technology",
   "Microsoft 365 Deployment",
@@ -227,6 +250,7 @@ microsoft365MobileProductivity.projectTitle = "Microsoft M365 Mobile Productivit
 microsoft365MobileProductivity.projectText = "Editor / Motion Graphics";
 microsoft365MobileProductivity.imgSrc = "images/microsoft365MobileProductivity.jpg";
 microsoft365MobileProductivity.projectTags = [
+  "microsoft",
   "corporate",
   "technology",
   "Microsoft M365 Mobile Productivity",
@@ -243,6 +267,7 @@ microsoft365PartnerVideos.projectTitle = "Microsoft M365 Partner Videos";
 microsoft365PartnerVideos.projectText = "Editor / Motion Graphics";
 microsoft365PartnerVideos.imgSrc = "images/microsoft365PartnerVideos.jpg";
 microsoft365PartnerVideos.projectTags = [
+  "microsoft",
   "corporate",
   "technology",
   "Microsoft M365 Partner Videos",
@@ -257,7 +282,13 @@ let microsoftAIBDM = new ProjectObject();
 microsoftAIBDM.projectTitle = "Microsoft AI BDM";
 microsoftAIBDM.projectText = "Editor / Motion Graphics";
 microsoftAIBDM.imgSrc = "images/microsoftAI-BDM.jpg";
-microsoftAIBDM.projectTags = ["corporate", "technology", "Microsoft AI BDM", "browse all"];
+microsoftAIBDM.projectTags = [
+  "microsoft",
+  "corporate",
+  "technology",
+  "Microsoft AI BDM",
+  "browse all",
+];
 microsoftAIBDM.projectVideos = ["363462269"];
 projects.push(microsoftAIBDM);
 
@@ -267,7 +298,13 @@ let microsoftAILoblaw = new ProjectObject();
 microsoftAILoblaw.projectTitle = "Microsoft AI Loblaw";
 microsoftAILoblaw.projectText = "Editor / Motion Graphics";
 microsoftAILoblaw.imgSrc = "images/microsoftAI-Loblaw.jpg";
-microsoftAILoblaw.projectTags = ["corporate", "technology", "Microsoft AI Loblaw", "browse all"];
+microsoftAILoblaw.projectTags = [
+  "microsoft",
+  "corporate",
+  "technology",
+  "Microsoft AI Loblaw",
+  "browse all",
+];
 microsoftAILoblaw.projectVideos = ["363463375"];
 projects.push(microsoftAILoblaw);
 
@@ -278,6 +315,7 @@ microsoftProjectHanover.projectTitle = "Microsoft Project Hanover";
 microsoftProjectHanover.projectText = "Editor / Motion Graphics";
 microsoftProjectHanover.imgSrc = "images/microsoftAIProjectHanover.jpg";
 microsoftProjectHanover.projectTags = [
+  "microsoft",
   "corporate",
   "technology",
   "Microsoft Project Hanover",
@@ -293,6 +331,7 @@ microsoftAzureAD20Years.projectTitle = "Microsoft Azure AD 20 Years";
 microsoftAzureAD20Years.projectText = "Editor / Motion Graphics";
 microsoftAzureAD20Years.imgSrc = "images/microsoftAzureAD20Years.jpg";
 microsoftAzureAD20Years.projectTags = [
+  "microsoft",
   "corporate",
   "technology",
   "Microsoft Azure AD 20 Years",
@@ -308,6 +347,7 @@ microsoftBuildingBuild.projectTitle = "Building Build";
 microsoftBuildingBuild.projectText = "Editor / Motion Graphics";
 microsoftBuildingBuild.imgSrc = "images/microsoftBuildingBuild.jpg";
 microsoftBuildingBuild.projectTags = [
+  "microsoft",
   "corporate",
   "technology",
   "Building Build",
@@ -324,6 +364,7 @@ microsoftGOSHTeamUp.projectTitle = "Microsoft GOSH Team Up";
 microsoftGOSHTeamUp.projectText = "Editor";
 microsoftGOSHTeamUp.imgSrc = "images/microsoftGOSHTeamUp.jpg";
 microsoftGOSHTeamUp.projectTags = [
+  "microsoft",
   "corporate",
   "technology",
   "Microsoft GOSH Team Up",
@@ -339,6 +380,7 @@ microsoftSmartSpaces.projectTitle = "Microsoft Smart Spaces";
 microsoftSmartSpaces.projectText = "Editor / Motion Graphics";
 microsoftSmartSpaces.imgSrc = "images/microsoftSmartSpaces.jpg";
 microsoftSmartSpaces.projectTags = [
+  "microsoft",
   "corporate",
   "technology",
   "Microsoft Smart Spaces",
@@ -354,6 +396,8 @@ xboxAdaptiveController.projectTitle = "Xbox Adaptive Controller";
 xboxAdaptiveController.projectText = "Editor / Motion Graphics";
 xboxAdaptiveController.imgSrc = "images/microsoftXboxAdaptiveController.jpg";
 xboxAdaptiveController.projectTags = [
+  "microsoft",
+  "xbox",
   "corporate",
   "technology",
   "Xbox Adaptive Controller",
@@ -473,7 +517,7 @@ let oculus = new ProjectObject();
 oculus.projectTitle = "Oculus";
 oculus.projectText = "Editor / Motion Graphics";
 oculus.imgSrc = "images/oculus.jpg";
-oculus.projectTags = ["horror", "oculus", "browse all"];
+oculus.projectTags = ["blumhouse", "horror", "oculus", "browse all"];
 oculus.projectVideos = ["209164279"];
 projects.push(oculus);
 
@@ -493,7 +537,13 @@ let paccarFutureSales = new ProjectObject();
 paccarFutureSales.projectTitle = "PACCAR Future Sales";
 paccarFutureSales.projectText = "Editor / Motion Graphics";
 paccarFutureSales.imgSrc = "images/paccarFutureSales.jpg";
-paccarFutureSales.projectTags = ["corporate", "technology", "PACCAR Future Sales", "browse all"];
+paccarFutureSales.projectTags = [
+  "microsoft",
+  "corporate",
+  "technology",
+  "PACCAR Future Sales",
+  "browse all",
+];
 paccarFutureSales.projectVideos = ["475252039"];
 projects.push(paccarFutureSales);
 
@@ -503,7 +553,7 @@ let paperTowns = new ProjectObject();
 paperTowns.projectTitle = "Paper Towns";
 paperTowns.projectText = "Editor / Motion Graphics";
 paperTowns.imgSrc = "images/paperTowns.jpg";
-paperTowns.projectTags = ["drama", "comedy", "romance", "Paper Towns", "browse all"];
+paperTowns.projectTags = ["drama", "comedy", "romance", "Paper Towns", "browse all", "20th"];
 paperTowns.projectVideos = ["208253092", "208252719", "208252904", "208252887"];
 projects.push(paperTowns);
 
@@ -519,6 +569,7 @@ peoplePlacesThings.projectTags = [
   "romance",
   "People Places Things",
   "browse all",
+  "film arcade",
 ];
 peoplePlacesThings.projectVideos = ["209164301"];
 projects.push(peoplePlacesThings);
@@ -553,7 +604,14 @@ let powerRangers = new ProjectObject();
 powerRangers.projectTitle = "Power Rangers";
 powerRangers.projectText = "Editor / Motion Graphics";
 powerRangers.imgSrc = "images/powerRangers.jpg";
-powerRangers.projectTags = ["adventure", "action", "sci-fi", "Power Rangers", "browse all"];
+powerRangers.projectTags = [
+  "adventure",
+  "action",
+  "sci-fi",
+  "Power Rangers",
+  "browse all",
+  "lionsgate",
+];
 powerRangers.projectVideos = ["209510220", "209510166"];
 projects.push(powerRangers);
 
@@ -563,7 +621,7 @@ let rampage = new ProjectObject();
 rampage.projectTitle = "Rampage";
 rampage.projectText = "Editor";
 rampage.imgSrc = "images/rampage.jpg";
-rampage.projectTags = ["action", "sci-fi", "horror", "rampage", "browse all", "awards"];
+rampage.projectTags = ["action", "sci-fi", "horror", "rampage", "browse all", "awards", "warner"];
 rampage.projectVideos = ["272281886", "272282009", "272281838"];
 rampage.award = "key";
 projects.push(rampage);
@@ -574,7 +632,7 @@ let runnerRunner = new ProjectObject();
 runnerRunner.projectTitle = "Runner Runner";
 runnerRunner.projectText = "Editor / Motion Graphics";
 runnerRunner.imgSrc = "images/runnerRunner.jpg";
-runnerRunner.projectTags = ["action", "drama", "Runner Runner", "browse all"];
+runnerRunner.projectTags = ["action", "drama", "Runner Runner", "browse all", "20th"];
 runnerRunner.projectVideos = ["312819548"];
 projects.push(runnerRunner);
 
@@ -584,7 +642,12 @@ let sapConcurCustomerTrust = new ProjectObject();
 sapConcurCustomerTrust.projectTitle = "SAP Concur Customer Trust";
 sapConcurCustomerTrust.projectText = "Editor / Motion Graphics";
 sapConcurCustomerTrust.imgSrc = "images/SAPConcurCustomerTrust.jpg";
-sapConcurCustomerTrust.projectTags = ["corporate", "SAP Concur Customer Trust", "browse all"];
+sapConcurCustomerTrust.projectTags = [
+  "corporate",
+  "SAP Concur Customer Trust",
+  "browse all",
+  "sap",
+];
 sapConcurCustomerTrust.projectVideos = ["363464400"];
 projects.push(sapConcurCustomerTrust);
 
@@ -594,7 +657,14 @@ let sapSizzle = new ProjectObject();
 sapSizzle.projectTitle = "SAP Sizzle";
 sapSizzle.projectText = "Editor / Motion Graphics";
 sapSizzle.imgSrc = "images/sapSizzle.jpg";
-sapSizzle.projectTags = ["corporate", "SAP Sizzle", "Indigo Slate", "browse all", "favorites"];
+sapSizzle.projectTags = [
+  "corporate",
+  "SAP Sizzle",
+  "indigo slate",
+  "browse all",
+  "favorites",
+  "sap",
+];
 sapSizzle.projectVideos = ["525680252"];
 projects.push(sapSizzle);
 
@@ -604,7 +674,7 @@ let sevenBucksHoliday = new ProjectObject();
 sevenBucksHoliday.projectTitle = "Seven Bucks Holiday";
 sevenBucksHoliday.projectText = "Editor / Motion Graphics";
 sevenBucksHoliday.imgSrc = "images/sevenBucksHoliday.jpg";
-sevenBucksHoliday.projectTags = ["corporate", "Seven Bucks Holiday", "browse all"];
+sevenBucksHoliday.projectTags = ["corporate", "Seven Bucks Holiday", "browse all", "seven bucks"];
 sevenBucksHoliday.projectVideos = ["312821683"];
 projects.push(sevenBucksHoliday);
 
@@ -623,6 +693,7 @@ shazam.projectTags = [
   "shazam!",
   "browse all",
   "favorites",
+  "warner",
 ];
 shazam.projectVideos = ["281502145"];
 projects.push(shazam);
@@ -633,7 +704,7 @@ let skypeMeetNow = new ProjectObject();
 skypeMeetNow.projectTitle = "Skype Meet Now";
 skypeMeetNow.projectText = "Editor / Motion Graphics";
 skypeMeetNow.imgSrc = "images/skypeMeetNow.jpg";
-skypeMeetNow.projectTags = ["corporate", "Skype Meet Now", "browse all", "favorites"];
+skypeMeetNow.projectTags = ["corporate", "Skype Meet Now", "browse all", "favorites", "microsoft"];
 skypeMeetNow.projectVideos = ["475257653"];
 projects.push(skypeMeetNow);
 
@@ -644,7 +715,7 @@ theBoy.projectTitle = "The Boy";
 theBoy.projectText = "Editor";
 theBoy.imgSrc = "images/theBoy.jpg";
 theBoy.projectTags = ["horror", "The Boy", "browse all"];
-theBoy.projectVideos = ["209165016", "209164905", "209164975", "209164928"];
+theBoy.projectVideos = ["209165016", "209164905", "209164975", "209164928", "stx"];
 projects.push(theBoy);
 
 //___________________________________________________________________________________
@@ -671,7 +742,15 @@ let theGetDown = new ProjectObject();
 theGetDown.projectTitle = "The Get Down";
 theGetDown.projectText = "Editor";
 theGetDown.imgSrc = "images/theGetDown.jpg";
-theGetDown.projectTags = ["drama", "historical", "romance", "The Get Down", "browse all", "awards"];
+theGetDown.projectTags = [
+  "drama",
+  "historical",
+  "romance",
+  "The Get Down",
+  "browse all",
+  "awards",
+  "netflix",
+];
 theGetDown.projectVideos = ["208769604"];
 theGetDown.award = "key";
 projects.push(theGetDown);
@@ -682,7 +761,7 @@ let theGreatWall = new ProjectObject();
 theGreatWall.projectTitle = "The Great Wall";
 theGreatWall.projectText = "Editor";
 theGreatWall.imgSrc = "images/theGreatWall.jpg";
-theGreatWall.projectTags = ["action", "sci-fi", "The Great Wall", "browse all"];
+theGreatWall.projectTags = ["action", "sci-fi", "The Great Wall", "browse all", "universal"];
 theGreatWall.projectVideos = ["208768902"];
 projects.push(theGreatWall);
 
@@ -692,7 +771,14 @@ let theLongestRide = new ProjectObject();
 theLongestRide.projectTitle = "The Longest Ride";
 theLongestRide.projectText = "Editor / Motion Graphics";
 theLongestRide.imgSrc = "images/theLongestRide.jpg";
-theLongestRide.projectTags = ["drama", "historical", "romance", "The Longest Ride", "browse all"];
+theLongestRide.projectTags = [
+  "drama",
+  "historical",
+  "romance",
+  "The Longest Ride",
+  "browse all",
+  "20th",
+];
 theLongestRide.projectVideos = [
   "208767181",
   "208767145",
@@ -718,6 +804,7 @@ theMazeRunner.projectTags = [
   "adventure",
   "The Maze Runner",
   "browse all",
+  "20th",
 ];
 theMazeRunner.projectVideos = ["209164210"];
 projects.push(theMazeRunner);
@@ -735,6 +822,7 @@ theMazeRunnerScorchTrials.projectTags = [
   "adventure",
   "The Maze Runner: Scorch Trials",
   "browse all",
+  "20th",
 ];
 theMazeRunnerScorchTrials.projectVideos = ["209164258"];
 projects.push(theMazeRunnerScorchTrials);
@@ -751,6 +839,7 @@ theMountainBetweenUs.projectTags = [
   "romance",
   "The Mountain Between Us",
   "browse all",
+  "20th",
 ];
 theMountainBetweenUs.projectVideos = ["279757097"];
 projects.push(theMountainBetweenUs);
@@ -770,6 +859,7 @@ theSecretLifeofWalterMitty.projectTags = [
   "browse all",
   "awards",
   "favorites",
+  "20th",
 ];
 theSecretLifeofWalterMitty.projectVideos = ["208428637", "208428618"];
 theSecretLifeofWalterMitty.award = "key";
@@ -781,7 +871,15 @@ let theWolverine = new ProjectObject();
 theWolverine.projectTitle = "The Wolverine";
 theWolverine.projectText = "Editor / Motion Graphics";
 theWolverine.imgSrc = "images/theWolverine.jpg";
-theWolverine.projectTags = ["action", "sci-fi", "drama", "The Wolverine", "browse all", "awards"];
+theWolverine.projectTags = [
+  "action",
+  "sci-fi",
+  "drama",
+  "The Wolverine",
+  "browse all",
+  "awards",
+  "20th",
+];
 theWolverine.projectVideos = ["208427854", "208427841"];
 theWolverine.award = "key";
 projects.push(theWolverine);
@@ -792,7 +890,12 @@ let valveTheInternational = new ProjectObject();
 valveTheInternational.projectTitle = "Valve The International 2019";
 valveTheInternational.projectText = "Editor / Motion Graphics";
 valveTheInternational.imgSrc = "images/valveTheInternational.jpg";
-valveTheInternational.projectTags = ["corporate", "Valve The International 2019", "browse all"];
+valveTheInternational.projectTags = [
+  "corporate",
+  "Valve The International 2019",
+  "browse all",
+  "valve",
+];
 valveTheInternational.projectVideos = ["363464976", "363465012", "363465063"];
 projects.push(valveTheInternational);
 
@@ -802,7 +905,7 @@ let xMenDaysOfFuturePast = new ProjectObject();
 xMenDaysOfFuturePast.projectTitle = "Xmen Days of Future Past";
 xMenDaysOfFuturePast.projectText = "Editor / Motion Graphics";
 xMenDaysOfFuturePast.imgSrc = "images/xMenDaysOfFuturePast.jpg";
-xMenDaysOfFuturePast.projectTags = ["Xmen Days of Future Past", "browse all", "awards"];
+xMenDaysOfFuturePast.projectTags = ["Xmen Days of Future Past", "browse all", "awards", "20th"];
 xMenDaysOfFuturePast.projectVideos = [
   "208222198",
   "208222240",

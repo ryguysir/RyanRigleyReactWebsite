@@ -24,9 +24,11 @@ body {
 /* __________About Me section_______________ */
 /* ________________________________________ */
 
-/* my logo */
-#ryan-rigley-logo {
-  margin-bottom: -20%;
+/* my logo _________________________*/
+.ryan-rigley-logo {
+  width: 50%;
+  margin: -5%;
+  filter: drop-shadow(2px 2px 3px black);
 }
 
 /* section _________________________*/
@@ -139,7 +141,6 @@ body {
   font-weight: 500;
   user-select: none;
 }
-
 /* Icons _________________________*/
 .about-me-container i {
   animation: chevronDownAnim 2s ease infinite;
@@ -237,6 +238,15 @@ body {
 /* __________My Work section_______________ */
 /* ________________________________________ */
 
+.my-work {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  top: 0;
+}
+
 /* Backgrounds _________________________ */
 .bg {
   animation: slide 5s ease-in-out infinite alternate;
@@ -255,18 +265,6 @@ body {
 }
 .bg3 {
   animation-duration: 7s;
-}
-.bg4 {
-  animation-duration: 10s;
-}
-
-@keyframes slide {
-  0% {
-    transform: translateX(-25%);
-  }
-  100% {
-    transform: translateX(25%);
-  }
 }
 
 /* Tags _________________________ */
@@ -312,12 +310,15 @@ body {
   background: var(--limeGreen);
 }
 
+.search-bttn {
+  grid-column: 1;
+}
 .tag-search-field {
   transition: all var(--tag-transition-time) ease;
   position: relative;
   height: 30px;
   transform: scale(1);
-  grid-column: 4/6;
+  grid-column: 2/4;
 
   background: var(--main-tag-color);
 
@@ -456,6 +457,7 @@ body {
   transform: translateX(-50%);
   z-index: 20;
 }
+
 /* Video Panel _________________________ */
 .video-panel {
   position: fixed;
@@ -535,12 +537,14 @@ body {
 
 /* Lottie _________________________ */
 .primary-lottie-anim {
-  position: relative;
-  margin: 0 auto;
-  width: 50vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  position: absolute;
+  width: 40vw;
+  height: 40vw;
+
+  top: 50%;
+  left: 50%;
+  z-index: -3;
+  transform: translate(-50%, -50%);
 }
 
 /* Buttons _________________________*/
@@ -562,6 +566,59 @@ body {
   white-space: nowrap;
   font-weight: 500;
   user-select: none;
+}
+
+/* company logos section _________________________*/
+.company-logos-container {
+  position: sticky;
+  width: 100vw;
+  height: 15vh;
+  overflow: scroll;
+  top: 100%;
+  background: #415f7c;
+  margin-top: 50px;
+
+  display: grid;
+  grid-template-columns: repeat(18, 1fr);
+  grid-template-rows: 1fr;
+  align-items: center;
+  justify-items: center;
+  filter: drop-shadow(0px 0px 30px rgba(0, 0, 0, 0.35));
+  cursor: pointer;
+}
+.company-logo-holder {
+  margin: 10px;
+  position: relative;
+  width: 75px;
+  height: 75px;
+  cursor: default;
+}
+.company-logo-holder::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: inherit;
+  height: inherit;
+  z-index: 10;
+  cursor: pointer;
+}
+.company-logo-object {
+  content: "";
+  transition: all var(--project-transition-time) ease-out;
+  width: 100%;
+  height: 100%;
+  opacity: 0.25;
+  filter: grayscale(1) invert(1);
+}
+.company-logo-object-toggled {
+  opacity: 1;
+  filter: grayscale(0) invert(0);
+}
+.company-logo-object:active {
+  opacity: 1;
+  filter: grayscale(0) invert(0);
 }
 
 /* ________________________________________ */
@@ -614,6 +671,14 @@ body {
     left: 0;
   }
 }
+@keyframes slide {
+  0% {
+    transform: translateX(-25%);
+  }
+  100% {
+    transform: translateX(25%);
+  }
+}
 
 /* ________________________________________ */
 /* _____________Media Query________________ */
@@ -631,10 +696,6 @@ body {
   }
   .tag {
     font-size: 0.67em;
-  }
-  .primary-lottie-anim {
-    width: 40vh;
-    top: 5vh;
   }
   #project-holder {
     grid-template-columns: repeat(2, 1fr);
@@ -750,5 +811,9 @@ body {
   }
   .tag-search-field-submit:hover {
     color: var(--limeGreen);
+  }
+  .company-logo-holder:hover .company-logo-object {
+    opacity: 1;
+    filter: grayscale(0) invert(0);
   }
 }

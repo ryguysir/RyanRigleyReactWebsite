@@ -2,7 +2,7 @@ import React from "react";
 
 const SearchBttn = ({ showSearch }) => {
   return (
-    <div className="tag" onClick={showSearch}>
+    <div className="tag search-bttn" onClick={showSearch}>
       Search
     </div>
   );

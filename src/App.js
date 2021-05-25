@@ -10,6 +10,7 @@ import PrimaryLottieAnim from "./components/PrimaryLottieAnim";
 import AboutMeSection from "./components/AboutMeSection";
 import ContactMe from "./components/ContactMe";
 import VideoPanel from "./components/VideoPanel";
+import CompanyLogos from "./components/CompanyLogos";
 
 function App() {
   //variables
@@ -113,9 +114,10 @@ function App() {
         <ContactMe scrollToTop={scrollToTop} />
       </div>
       <div className={`my-work ${showAboutMe ? "hidden" : ""}`}>
+        {/* backgrounds */}
         <div className="bg bg2"></div>
         <div className="bg bg3"></div>
-        <div className="bg bg4"></div>
+
         {/* video panel */}
         <VideoPanel videoPanelObject={videoPanelObject} setVideoPanelObject={setVideoPanelObject} />
 
@@ -126,10 +128,12 @@ function App() {
           }}
           className="my-work-bttn"
         >
+          <i
+            className="fas fa-chevron-left"
+            style={{ marginRight: 20 + "px", marginLeft: -5 + "px" }}
+          ></i>
           About Me
         </div>
-
-        {/* search form */}
 
         {/* tags */}
         <div id="tag-container">
@@ -158,6 +162,9 @@ function App() {
 
         {/* lottie animation */}
         <PrimaryLottieAnim currentTags={currentTags} />
+
+        {/* company logos */}
+        <CompanyLogos currentTags={currentTags} setCurrentTags={setCurrentTags} />
       </div>
     </>
   );
