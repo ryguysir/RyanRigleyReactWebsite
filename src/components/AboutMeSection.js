@@ -9,6 +9,7 @@ const AboutMeSection = ({
   showAboutMe,
   setShowAboutMe,
   scrollToContactMe,
+  centerOrFooter,
 }) => {
   const viewMyWork = () => {
     setShowAboutMe(!showAboutMe);
@@ -21,14 +22,7 @@ const AboutMeSection = ({
             <h1>HELLO</h1>
             <h2>MY NAME IS</h2>
           </div>
-          {/* <object
-            className={`ryan-rigley-logo ${myNameIs ? "" : "hidden"}`}
-            data="./Ryan Rigley Logo.svg"
-          >
-            {" "}
-          </object> */}
-
-          <h3>{body}</h3>
+          <h3 className={`${centerOrFooter ? "hidden" : ""}`}>{body}</h3>
           <div className={`bttn-holder ${buttons ? "" : "hidden"}`}>
             <div onClick={viewMyWork} className="about-me-bttn">
               View My Work
@@ -38,6 +32,11 @@ const AboutMeSection = ({
             </div>
           </div>
           <i className="fas fa-chevron-down"></i>
+        </div>
+
+        <div className={`about-me-footer-text-before ${centerOrFooter ? "" : "hidden"}`}></div>
+        <div className={`about-me-footer-text ${centerOrFooter ? "" : "hidden"}`}>
+          <span>{body}</span>
         </div>
         <img
           alt=""

@@ -8,6 +8,23 @@ function ProjectObject() {
   this.award = "";
 }
 
+let amazonCxLabs = new ProjectObject();
+amazonCxLabs.projectTitle = "Amazon Alexa Series";
+amazonCxLabs.projectText = "Editor / Motion Graphics";
+amazonCxLabs.imgSrc = "images/amazonCxLabs.jpg";
+amazonCxLabs.projectTags = [
+  "corporate",
+  "technology",
+  "amazon echo",
+  "browse all",
+  "amazon",
+  "favorites",
+];
+amazonCxLabs.projectVideos = ["555046250", "555045189", "555047791"];
+projects.push(amazonCxLabs);
+
+//___________________________________________________________________________________
+
 let agent47 = new ProjectObject();
 agent47.projectTitle = "Hitman: Agent 47";
 agent47.projectText = "Editor";
@@ -714,8 +731,8 @@ let theBoy = new ProjectObject();
 theBoy.projectTitle = "The Boy";
 theBoy.projectText = "Editor";
 theBoy.imgSrc = "images/theBoy.jpg";
-theBoy.projectTags = ["horror", "The Boy", "browse all"];
-theBoy.projectVideos = ["209165016", "209164905", "209164975", "209164928", "stx"];
+theBoy.projectTags = ["horror", "The Boy", "browse all", "stx"];
+theBoy.projectVideos = ["209165016", "209164905", "209164975", "209164928"];
 projects.push(theBoy);
 
 //___________________________________________________________________________________

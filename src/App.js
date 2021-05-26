@@ -85,6 +85,7 @@ function App() {
           showAboutMe={showAboutMe}
           setShowAboutMe={setShowAboutMe}
           scrollToContactMe={scrollToContactMe}
+          centerOrFooter={false}
         />
 
         {/* video editor */}
@@ -97,6 +98,7 @@ function App() {
           showAboutMe={showAboutMe}
           setShowAboutMe={setShowAboutMe}
           scrollToContactMe={scrollToContactMe}
+          centerOrFooter={true}
         />
 
         {/* motion graphics */}
@@ -109,6 +111,7 @@ function App() {
           showAboutMe={showAboutMe}
           setShowAboutMe={setShowAboutMe}
           scrollToContactMe={scrollToContactMe}
+          centerOrFooter={true}
         />
 
         <ContactMe scrollToTop={scrollToTop} />

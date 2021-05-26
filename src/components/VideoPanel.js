@@ -33,8 +33,9 @@ const VideoPanel = ({ videoPanelObject, setVideoPanelObject, setVideoPanelPositi
             <i className="fas fa-chevron-up"></i>
             <p>Return to projects</p>
           </div>
-
-          <ProjectVideo videoSrc={videoPanelObject.videos[videoPanelObject.videoNumber]} />
+          <div className="video-panel-iframe">
+            <ProjectVideo videoSrc={videoPanelObject.videos[videoPanelObject.videoNumber]} />
+          </div>
           <div className="video-bttn-container">
             <div className="video-previous-bttn" onClick={previousVid}>
               <i className="fas fa-chevron-left"></i>

@@ -10,170 +10,188 @@ const CompanyLogos = ({ currentTags, setCurrentTags }) => {
       setCurrentTags([...currentTags, val]);
     }
   };
+  const scrollRight = () => {
+    let elem = document.getElementsByClassName("company-logos-container")[0];
+    let curScrollPos = document.getElementsByClassName("company-logos-container")[0].scrollLeft;
+    elem.scroll(curScrollPos + 200, 0);
+  };
+  const scrollLeft = () => {
+    let elem = document.getElementsByClassName("company-logos-container")[0];
+    let curScrollPos = document.getElementsByClassName("company-logos-container")[0].scrollLeft;
+    elem.scroll(curScrollPos - 200, 0);
+  };
   return (
-    <div className="company-logos-container">
-      <div className="company-logo-holder" onClick={currentProjectsHandler}>
-        <object
-          className="company-logo-object"
-          aria-labelledby="microsoft logo"
-          alt="microsoft"
-          data="./logos/microsoft_logo.svg"
-        ></object>
+    <>
+      <div className="company-logos-container-arrow-left" onClick={scrollLeft}>
+        <i className="fas fa-chevron-left"></i>
       </div>
+      <div className="company-logos-container-arrow-right" onClick={scrollRight}>
+        <i className="fas fa-chevron-right"></i>
+      </div>
+      <div className="company-logos-container">
+        <div className="company-logo-holder" onClick={currentProjectsHandler}>
+          <object
+            className="company-logo-object"
+            aria-labelledby="microsoft logo"
+            alt="microsoft"
+            data="./logos/microsoft_logo.svg"
+          ></object>
+        </div>
 
-      <div className="company-logo-holder" onClick={currentProjectsHandler}>
-        <object
-          className="company-logo-object"
-          aria-labelledby="amazon logo"
-          alt="amazon"
-          data="./logos/amazon_logo.svg"
-        ></object>
-      </div>
+        <div className="company-logo-holder" onClick={currentProjectsHandler}>
+          <object
+            className="company-logo-object"
+            aria-labelledby="amazon logo"
+            alt="amazon"
+            data="./logos/amazon_logo.svg"
+          ></object>
+        </div>
 
-      <div className="company-logo-holder" onClick={currentProjectsHandler}>
-        <object
-          className="company-logo-object"
-          aria-labelledby="indigo slate logo"
-          alt="indigo slate"
-          data="./logos/indigo slate_logo.svg"
-        ></object>
-      </div>
+        <div className="company-logo-holder" onClick={currentProjectsHandler}>
+          <object
+            className="company-logo-object"
+            aria-labelledby="indigo slate logo"
+            alt="indigo slate"
+            data="./logos/indigo slate_logo.svg"
+          ></object>
+        </div>
 
-      <div className="company-logo-holder" onClick={currentProjectsHandler}>
-        <object
-          className="company-logo-object"
-          aria-labelledby="dell logo"
-          alt="dell"
-          data="./logos/dell_logo.svg"
-        ></object>
-      </div>
+        <div className="company-logo-holder" onClick={currentProjectsHandler}>
+          <object
+            className="company-logo-object"
+            aria-labelledby="dell logo"
+            alt="dell"
+            data="./logos/dell_logo.svg"
+          ></object>
+        </div>
 
-      <div className="company-logo-holder" onClick={currentProjectsHandler}>
-        <object
-          className="company-logo-object"
-          aria-labelledby="sap logo"
-          alt="sap"
-          data="./logos/sap_logo.svg"
-        ></object>
-      </div>
+        <div className="company-logo-holder" onClick={currentProjectsHandler}>
+          <object
+            className="company-logo-object"
+            aria-labelledby="sap logo"
+            alt="sap"
+            data="./logos/sap_logo.svg"
+          ></object>
+        </div>
 
-      <div className="company-logo-holder" onClick={currentProjectsHandler}>
-        <object
-          className="company-logo-object"
-          aria-labelledby="xbox logo"
-          alt="xbox"
-          data="./logos/xbox_logo.svg"
-        ></object>
-      </div>
+        <div className="company-logo-holder" onClick={currentProjectsHandler}>
+          <object
+            className="company-logo-object"
+            aria-labelledby="xbox logo"
+            alt="xbox"
+            data="./logos/xbox_logo.svg"
+          ></object>
+        </div>
 
-      <div className="company-logo-holder" onClick={currentProjectsHandler}>
-        <object
-          className="company-logo-object"
-          aria-labelledby="valve logo"
-          alt="valve"
-          data="./logos/valve_logo.svg"
-        ></object>
-      </div>
+        <div className="company-logo-holder" onClick={currentProjectsHandler}>
+          <object
+            className="company-logo-object"
+            aria-labelledby="valve logo"
+            alt="valve"
+            data="./logos/valve_logo.svg"
+          ></object>
+        </div>
 
-      <div className="company-logo-holder" onClick={currentProjectsHandler}>
-        <object
-          className="company-logo-object"
-          aria-labelledby="netflix logo"
-          alt="netflix"
-          data="./logos/netflix_logo.svg"
-        ></object>
-      </div>
+        <div className="company-logo-holder" onClick={currentProjectsHandler}>
+          <object
+            className="company-logo-object"
+            aria-labelledby="netflix logo"
+            alt="netflix"
+            data="./logos/netflix_logo.svg"
+          ></object>
+        </div>
 
-      <div className="company-logo-holder" onClick={currentProjectsHandler}>
-        <object
-          className="company-logo-object"
-          aria-labelledby="disney logo"
-          alt="disney"
-          data="./logos/disney_logo.svg"
-        ></object>
-      </div>
+        <div className="company-logo-holder" onClick={currentProjectsHandler}>
+          <object
+            className="company-logo-object"
+            aria-labelledby="disney logo"
+            alt="disney"
+            data="./logos/disney_logo.svg"
+          ></object>
+        </div>
 
-      <div className="company-logo-holder" onClick={currentProjectsHandler}>
-        <object
-          className="company-logo-object"
-          aria-labelledby="warner bros logo"
-          alt="warner"
-          data="./logos/warner bros_logo.svg"
-        ></object>
-      </div>
+        <div className="company-logo-holder" onClick={currentProjectsHandler}>
+          <object
+            className="company-logo-object"
+            aria-labelledby="warner bros logo"
+            alt="warner"
+            data="./logos/warner bros_logo.svg"
+          ></object>
+        </div>
 
-      <div className="company-logo-holder" onClick={currentProjectsHandler}>
-        <object
-          className="company-logo-object"
-          aria-labelledby="20th century fox logo"
-          alt="20th"
-          data="./logos/20th century fox_logo.svg"
-        ></object>
-      </div>
+        <div className="company-logo-holder" onClick={currentProjectsHandler}>
+          <object
+            className="company-logo-object"
+            aria-labelledby="20th century fox logo"
+            alt="20th"
+            data="./logos/20th century fox_logo.svg"
+          ></object>
+        </div>
 
-      <div className="company-logo-holder" onClick={currentProjectsHandler}>
-        <object
-          className="company-logo-object"
-          aria-labelledby="paramount logo"
-          alt="paramount"
-          data="./logos/paramount_logo.svg"
-        ></object>
-      </div>
+        <div className="company-logo-holder" onClick={currentProjectsHandler}>
+          <object
+            className="company-logo-object"
+            aria-labelledby="paramount logo"
+            alt="paramount"
+            data="./logos/paramount_logo.svg"
+          ></object>
+        </div>
 
-      <div className="company-logo-holder" onClick={currentProjectsHandler}>
-        <object
-          className="company-logo-object"
-          aria-labelledby="prime video logo"
-          alt="prime"
-          data="./logos/prime video_logo.svg"
-        ></object>
-      </div>
+        <div className="company-logo-holder" onClick={currentProjectsHandler}>
+          <object
+            className="company-logo-object"
+            aria-labelledby="prime video logo"
+            alt="prime"
+            data="./logos/prime video_logo.svg"
+          ></object>
+        </div>
 
-      <div className="company-logo-holder" onClick={currentProjectsHandler}>
-        <object
-          className="company-logo-object"
-          aria-labelledby="universal logo"
-          alt="universal"
-          data="./logos/universal_logo.svg"
-        ></object>
-      </div>
+        <div className="company-logo-holder" onClick={currentProjectsHandler}>
+          <object
+            className="company-logo-object"
+            aria-labelledby="universal logo"
+            alt="universal"
+            data="./logos/universal_logo.svg"
+          ></object>
+        </div>
 
-      <div className="company-logo-holder" onClick={currentProjectsHandler}>
-        <object
-          className="company-logo-object"
-          aria-labelledby="lionsgate logo"
-          alt="lionsgate"
-          data="./logos/lionsgate_logo.svg"
-        ></object>
-      </div>
+        <div className="company-logo-holder" onClick={currentProjectsHandler}>
+          <object
+            className="company-logo-object"
+            aria-labelledby="lionsgate logo"
+            alt="lionsgate"
+            data="./logos/lionsgate_logo.svg"
+          ></object>
+        </div>
 
-      <div className="company-logo-holder" onClick={currentProjectsHandler}>
-        <object
-          className="company-logo-object"
-          aria-labelledby="blumhouse logo"
-          alt="blumhouse"
-          data="./logos/blumhouse_logo.svg"
-        ></object>
-      </div>
+        <div className="company-logo-holder" onClick={currentProjectsHandler}>
+          <object
+            className="company-logo-object"
+            aria-labelledby="blumhouse logo"
+            alt="blumhouse"
+            data="./logos/blumhouse_logo.svg"
+          ></object>
+        </div>
 
-      <div className="company-logo-holder" onClick={currentProjectsHandler}>
-        <object
-          className="company-logo-object"
-          aria-labelledby="stx logo"
-          alt="stx"
-          data="./logos/stx_logo.svg"
-        ></object>
-      </div>
+        <div className="company-logo-holder" onClick={currentProjectsHandler}>
+          <object
+            className="company-logo-object"
+            aria-labelledby="stx logo"
+            alt="stx"
+            data="./logos/stx_logo.svg"
+          ></object>
+        </div>
 
-      <div className="company-logo-holder" onClick={currentProjectsHandler}>
-        <object
-          className="company-logo-object"
-          aria-labelledby="film arcade logo"
-          alt="film arcade"
-          data="./logos/film arcade_logo.svg"
-        ></object>
+        <div className="company-logo-holder" onClick={currentProjectsHandler}>
+          <object
+            className="company-logo-object"
+            aria-labelledby="film arcade logo"
+            alt="film arcade"
+            data="./logos/film arcade_logo.svg"
+          ></object>
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 
