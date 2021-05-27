@@ -54,6 +54,7 @@ const AboutMeSection = ({
         <video
           className={`about-me-video ${vidOrImage ? "" : "hidden"}`}
           tabIndex="0"
+          loading="lazy"
           muted={true}
           autoPlay={true}
           loop={true}
