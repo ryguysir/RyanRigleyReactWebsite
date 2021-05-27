@@ -6,6 +6,9 @@ const ProjectVideo = ({ videoSrc }) => {
       title={videoSrc}
       width="960px"
       height="540px"
+      frameBorder="0"
+      allowFullScreen
+      loading="lazy"
       src={`https://player.vimeo.com/video/${videoSrc === undefined ? "516839250" : videoSrc}`}
       alt=""
     />

@@ -6,7 +6,6 @@ import Tag from "./components/Tag";
 import Project from "./components/Project";
 import SearchBttn from "./components/SearchBttn";
 import SearchForm from "./components/SearchForm";
-import PrimaryLottieAnim from "./components/PrimaryLottieAnim";
 import AboutMeSection from "./components/AboutMeSection";
 import ContactMe from "./components/ContactMe";
 import VideoPanel from "./components/VideoPanel";
@@ -78,7 +77,7 @@ function App() {
         {/* header */}
         <AboutMeSection
           myNameIs={true}
-          vidSrc={"./images/Ryan Water Bender.png"}
+          vidSrc={"./images/paperTexture.jpg"}
           body="Video Editor | Motion Graphics Artist | 3D Generalist | Web Developer"
           vidOrImage={false}
           buttons={true}
@@ -86,6 +85,7 @@ function App() {
           setShowAboutMe={setShowAboutMe}
           scrollToContactMe={scrollToContactMe}
           centerOrFooter={false}
+          currentTags={currentTags}
         />
 
         {/* video editor */}
@@ -162,9 +162,6 @@ function App() {
             />
           ))}
         </div>
-
-        {/* lottie animation */}
-        <PrimaryLottieAnim currentTags={currentTags} />
 
         {/* company logos */}
         <CompanyLogos currentTags={currentTags} setCurrentTags={setCurrentTags} />

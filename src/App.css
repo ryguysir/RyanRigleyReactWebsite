@@ -67,6 +67,7 @@ body {
   text-align: center;
   justify-self: center;
   align-self: center;
+  top: -50%;
 }
 .my-name-is h1 {
   font-weight: 600;
@@ -93,7 +94,6 @@ body {
 /* Textbox _________________________*/
 .about-me-container {
   position: relative;
-  width: 75%;
   height: 100%;
   display: grid;
   grid-template-rows: auto;
@@ -187,20 +187,35 @@ body {
 .about-me-video {
   position: absolute;
   top: 0;
-  height: 80vh;
+  height: 80vmax;
   opacity: 1;
   z-index: 1;
+}
+
+/* Lottie _________________________ */
+.primary-lottie-anim {
+  position: fixed;
+  width: 30vw;
+  height: 30vw;
+
+  top: 43%;
+  left: 50%;
+  z-index: 1;
+  transform: translate(-50%, -50%);
 }
 
 /* Image _________________________*/
 .about-me-image {
   position: fixed;
   object-fit: cover;
+  width: 100vw;
   left: 50%;
   transform: translate(-50%, 0%);
   height: 100vmax;
   opacity: 1;
-  z-index: 1;
+  z-index: 0;
+  filter: grayscale(1);
+  opacity: 0.2;
 }
 
 /* Contact Me _________________________*/
@@ -587,18 +602,6 @@ body {
   font-size: 100%;
   color: rgb(182, 182, 182);
   grid-row: 1;
-}
-
-/* Lottie _________________________ */
-.primary-lottie-anim {
-  position: absolute;
-  width: 40vw;
-  height: 40vw;
-
-  top: 50%;
-  left: 50%;
-  z-index: -3;
-  transform: translate(-50%, -50%);
 }
 
 /* Buttons _________________________*/

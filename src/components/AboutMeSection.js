@@ -1,4 +1,5 @@
 import React from "react";
+import PrimaryLottieAnim from "./PrimaryLottieAnim";
 
 const AboutMeSection = ({
   myNameIs,
@@ -10,6 +11,7 @@ const AboutMeSection = ({
   setShowAboutMe,
   scrollToContactMe,
   centerOrFooter,
+  currentTags,
 }) => {
   const viewMyWork = () => {
     setShowAboutMe(!showAboutMe);
@@ -37,6 +39,11 @@ const AboutMeSection = ({
         <div className={`about-me-footer-text-before ${centerOrFooter ? "" : "hidden"}`}></div>
         <div className={`about-me-footer-text ${centerOrFooter ? "" : "hidden"}`}>
           <span>{body}</span>
+        </div>
+
+        <div className={`primary-lottie-anim ${vidOrImage ? "hidden" : ""}`}>
+          {/* lottie animation */}
+          <PrimaryLottieAnim />
         </div>
         <img
           alt=""
