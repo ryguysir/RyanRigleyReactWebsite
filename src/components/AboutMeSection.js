@@ -20,9 +20,9 @@ const AboutMeSection = ({
     <div>
       <div className="about-me-section">
         <div className="about-me-container">
-          <div className={`my-name-is ${myNameIs ? "" : "hidden"}`}>
-            <h1>HELLO</h1>
-            <h2>MY NAME IS</h2>
+          <div className={`primary-lottie-anim ${vidOrImage ? "hidden" : ""}`}>
+            {/* lottie animation */}
+            <PrimaryLottieAnim />
           </div>
           <h3 className={`${centerOrFooter ? "hidden" : ""}`}>{body}</h3>
           <div className={`bttn-holder ${buttons ? "" : "hidden"}`}>
@@ -41,10 +41,6 @@ const AboutMeSection = ({
           <span>{body}</span>
         </div>
 
-        <div className={`primary-lottie-anim ${vidOrImage ? "hidden" : ""}`}>
-          {/* lottie animation */}
-          <PrimaryLottieAnim />
-        </div>
         <img
           alt=""
           className={`about-me-image ${vidOrImage ? "hidden" : ""}`}

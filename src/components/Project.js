@@ -32,8 +32,10 @@ const Project = ({
   };
   return (
     <div>
-      <div className="project" onClick={showVideos}>
+      <div className={award.length == 0 ? "hidden" : ""}>
         <AwardLottie award={award} />
+      </div>
+      <div className="project" onClick={showVideos}>
         <div className="project-text-and-img-holder">
           <div className="project-text">
             <h2>{projectTitle}</h2>

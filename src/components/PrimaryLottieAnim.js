@@ -3,7 +3,7 @@ import React from "react";
 const PrimaryLottieAnim = ({ currentTags }) => {
   return (
     <lottie-player
-      src="https://assets1.lottiefiles.com/packages/lf20_3rjibo7e.json"
+      src="https://assets2.lottiefiles.com/packages/lf20_3zg6fgdq.json"
       autoplay
       loop
     ></lottie-player>
