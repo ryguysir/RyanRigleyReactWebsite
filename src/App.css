@@ -19,6 +19,7 @@ body {
   background: var(--background);
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
+  -webkit-tap-highlight-color: transparent;
 }
 /* ________________________________________ */
 /* __________About Me section_______________ */
