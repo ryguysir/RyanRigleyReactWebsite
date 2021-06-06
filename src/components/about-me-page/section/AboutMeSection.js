@@ -1,5 +1,6 @@
 import React from "react";
-import PrimaryLottieAnim from "./PrimaryLottieAnim";
+import PrimaryLottieAnim from "../primary-lottie/PrimaryLottieAnim";
+import "./app.css";
 
 const AboutMeSection = ({
   myNameIs,

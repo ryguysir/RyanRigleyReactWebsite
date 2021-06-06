@@ -2,14 +2,14 @@ import React, { useState } from "react";
 import "./App.css";
 
 //import components
-import Tag from "./components/Tag";
-import Project from "./components/Project";
-import SearchBttn from "./components/SearchBttn";
-import SearchForm from "./components/SearchForm";
-import AboutMeSection from "./components/AboutMeSection";
-import ContactMe from "./components/ContactMe";
-import VideoPanel from "./components/VideoPanel";
-import CompanyLogos from "./components/CompanyLogos";
+import Tag from "./components/my-work-page/tags/Tag";
+import Project from "./components/my-work-page/project-components/project/Project";
+import SearchBttn from "./components/my-work-page/search/SearchBttn";
+import SearchForm from "./components/my-work-page/search/SearchForm";
+import AboutMeSection from "./components/about-me-page/about-me-page-components/section/AboutMeSection";
+import ContactMe from "./components/aboutMe/contactMe/ContactMe";
+import VideoPanel from "./components/my-work-page/project-components/video-panel/VideoPanel";
+import CompanyLogos from "./components/my-work-page/company-logos/CompanyLogos";
 
 function App() {
   //variables

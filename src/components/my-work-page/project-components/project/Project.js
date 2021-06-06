@@ -1,6 +1,8 @@
 import React from "react";
 
-import AwardLottie from "./AwardLottie";
+import AwardLottie from "../award/AwardLottie";
+
+import "./app.css";
 
 const Project = ({
   projectTitle,
@@ -32,7 +34,7 @@ const Project = ({
   };
   return (
     <div>
-      <div className={award.length == 0 ? "hidden" : ""}>
+      <div className={award.length === 0 ? "hidden" : ""}>
         <AwardLottie award={award} />
       </div>
       <div className="project" onClick={showVideos}>

@@ -1,6 +1,7 @@
 import React from "react";
 
 import ProjectVideo from "./ProjectVideo";
+import "./app.css";
 
 const VideoPanel = ({ videoPanelObject, setVideoPanelObject, setVideoPanelPosition }) => {
   const nextVid = () => {

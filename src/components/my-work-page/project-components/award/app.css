@@ -1,0 +1,13 @@
+/* award lottie */
+.award-lottie {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  transform: translate(120px, 400px);
+  z-index: 1;
+}
+
+/* Globals _________________________*/
+.hidden {
+  display: none;
+}

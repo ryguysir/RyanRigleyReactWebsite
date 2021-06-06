@@ -1,0 +1,14 @@
+/* Lottie _________________________ */
+.primary-lottie-anim {
+  position: relative;
+  transform: translateY(-5vw);
+  width: 30vw;
+  height: 30vw;
+  margin: -20vw;
+  z-index: -1;
+}
+
+/* Globals _________________________*/
+.hidden {
+  display: none;
+}
