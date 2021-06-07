@@ -1,6 +1,10 @@
 import React from "react";
-import PrimaryLottieAnim from "../primary-lottie/PrimaryLottieAnim";
+import { Link } from "react-router-dom";
 import "./app.css";
+import "../../../App.css";
+
+//import components
+import PrimaryLottieAnim from "../primary-lottie/PrimaryLottieAnim";
 
 const AboutMeSection = ({
   myNameIs,
@@ -8,15 +12,9 @@ const AboutMeSection = ({
   body,
   vidOrImage,
   buttons,
-  showAboutMe,
-  setShowAboutMe,
   scrollToContactMe,
   centerOrFooter,
-  currentTags,
 }) => {
-  const viewMyWork = () => {
-    setShowAboutMe(!showAboutMe);
-  };
   return (
     <div>
       <div className="about-me-section">
@@ -27,9 +25,10 @@ const AboutMeSection = ({
           </div>
           <h3 className={`${centerOrFooter ? "hidden" : ""}`}>{body}</h3>
           <div className={`bttn-holder ${buttons ? "" : "hidden"}`}>
-            <div onClick={viewMyWork} className="about-me-bttn">
-              View My Work
-            </div>
+            <Link to="/my-work">
+              <div className="about-me-bttn">View My Work</div>
+            </Link>
+
             <div onClick={scrollToContactMe} className="about-me-bttn">
               Contact Me
             </div>

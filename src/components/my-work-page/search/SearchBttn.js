@@ -1,5 +1,6 @@
 import React from "react";
 import "./app.css";
+import "../../../App.css";
 
 const SearchBttn = ({ showSearch }) => {
   return (

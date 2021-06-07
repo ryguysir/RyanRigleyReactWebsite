@@ -1,5 +1,6 @@
 import React from "react";
 import "./app.css";
+import "../../../App.css";
 
 const CompanyLogos = ({ currentTags, setCurrentTags }) => {
   const currentProjectsHandler = (e) => {

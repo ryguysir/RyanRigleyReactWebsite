@@ -1,0 +1,52 @@
+/* ________________________________________ */
+/* __________My Work section_______________ */
+/* ________________________________________ */
+
+.my-work {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  top: 0;
+}
+/* Buttons _________________________*/
+.my-work-bttn {
+  position: relative;
+  margin: 10px auto;
+  width: 200px;
+  transition: all 0.25s ease-in;
+  color: var(--main-text-color);
+  background: rgba(0, 193, 103, 0.281);
+  padding: 0.5em;
+  border-radius: 4px;
+  border-left: transparent 2px solid;
+  border-right: transparent 2px solid;
+  border-top: var(--limeGreen) 2px solid;
+  border-bottom: var(--limeGreen) 2px solid;
+  cursor: pointer;
+  text-align: center;
+  white-space: nowrap;
+  font-weight: 500;
+  user-select: none;
+}
+
+/* Backgrounds _________________________ */
+.bg {
+  animation: slide 5s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, rgba(0, 193, 103, 0.411) 50%, #2c3e50 50%);
+  bottom: 0;
+  left: -50%;
+  opacity: 0.5;
+  position: fixed;
+  right: -50%;
+  top: 0;
+  z-index: -100;
+}
+.bg2 {
+  animation-direction: alternate-reverse;
+  animation-duration: 6s;
+}
+.bg3 {
+  animation-duration: 7s;
+}

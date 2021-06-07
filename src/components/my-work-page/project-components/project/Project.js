@@ -1,8 +1,10 @@
 import React from "react";
 
-import AwardLottie from "../award/AwardLottie";
-
 import "./app.css";
+import "../../../../App.css";
+
+//import components
+import AwardLottie from "../award/AwardLottie";
 
 const Project = ({
   projectTitle,
