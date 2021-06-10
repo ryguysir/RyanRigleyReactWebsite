@@ -1,13 +1,11 @@
-/* award lottie */
-.award-lottie {
-  position: relative;
-  width: 100px;
-  height: 100px;
-  transform: translate(120px, 400px);
-  z-index: 1;
-}
-
 /* Globals _________________________*/
+.award {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
 .hidden {
   display: none;
 }

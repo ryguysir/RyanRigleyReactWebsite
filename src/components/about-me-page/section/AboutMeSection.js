@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Fade from "react-reveal/Fade";
 import "./app.css";
 import "../../../App.css";
 
@@ -23,7 +24,9 @@ const AboutMeSection = ({
             {/* lottie animation */}
             <PrimaryLottieAnim />
           </div>
-          <h3 className={`${centerOrFooter ? "hidden" : ""}`}>{body}</h3>
+          <Fade left cascade>
+            <h3 className={`${centerOrFooter ? "hidden" : ""}`}>{body}</h3>
+          </Fade>
           <div className={`bttn-holder ${buttons ? "" : "hidden"}`}>
             <Link to="/my-work">
               <div className="about-me-bttn">View My Work</div>
@@ -35,11 +38,14 @@ const AboutMeSection = ({
           </div>
           <i className="fas fa-chevron-down"></i>
         </div>
-
-        <div className={`about-me-footer-text-before ${centerOrFooter ? "" : "hidden"}`}></div>
-        <div className={`about-me-footer-text ${centerOrFooter ? "" : "hidden"}`}>
-          <span>{body}</span>
-        </div>
+        <Fade bottom>
+          <div className={`about-me-footer-text-before ${centerOrFooter ? "" : "hidden"}`}></div>
+          <div className={`about-me-footer-text ${centerOrFooter ? "" : "hidden"}`}>
+            <Fade bottom>
+              <span>{body}</span>
+            </Fade>
+          </div>
+        </Fade>
 
         <img
           alt=""

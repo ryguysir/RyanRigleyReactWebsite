@@ -8,7 +8,7 @@ const AwardLottie = ({ award }) => {
       loading="lazy"
       alt="award"
       src={`${award === "key" ? "./images/clioAward.png" : "./images/goldenTrailer.png"}`}
-      className="award-lottie"
+      className="award"
     />
   );
 };

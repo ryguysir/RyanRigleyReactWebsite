@@ -1,4 +1,5 @@
 import React from "react";
+
 import { Link } from "react-router-dom";
 import "./app.css";
 import "../../App.css";
@@ -55,10 +56,6 @@ const MyWorkPage = ({ currentTags, setCurrentTags, videoPanelObject, setVideoPan
   };
   return (
     <div className="my-work">
-      {/* backgrounds */}
-      <div className="bg bg2"></div>
-      <div className="bg bg3"></div>
-
       {/* video panel */}
       <VideoPanel videoPanelObject={videoPanelObject} setVideoPanelObject={setVideoPanelObject} />
 
@@ -85,16 +82,18 @@ const MyWorkPage = ({ currentTags, setCurrentTags, videoPanelObject, setVideoPan
       {/* projects */}
       <div id="project-holder">
         {projectTagSort().map((project) => (
-          <Project
-            award={project.award}
-            projectTitle={project.projectTitle}
-            projectText={project.projectText}
-            imgSrc={project.imgSrc}
-            projectVideos={project.projectVideos}
-            key={Math.random() * 1000}
-            videoPanelObject={videoPanelObject}
-            setVideoPanelObject={setVideoPanelObject}
-          />
+          <>
+            <Project
+              award={project.award}
+              projectTitle={project.projectTitle}
+              projectText={project.projectText}
+              imgSrc={project.imgSrc}
+              projectVideos={project.projectVideos}
+              key={project.projectTitle}
+              videoPanelObject={videoPanelObject}
+              setVideoPanelObject={setVideoPanelObject}
+            />
+          </>
         ))}
       </div>
 

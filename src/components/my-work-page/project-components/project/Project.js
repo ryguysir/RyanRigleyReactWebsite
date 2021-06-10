@@ -1,11 +1,11 @@
 import React from "react";
+import Fade from "react-reveal/Fade";
 
 import "./app.css";
 import "../../../../App.css";
 
 //import components
 import AwardLottie from "../award/AwardLottie";
-
 const Project = ({
   projectTitle,
   projectText,
@@ -28,27 +28,24 @@ const Project = ({
     return;
   };
 
-  const lowResImage = {
-    background: `url(${imgSrc.slice(0, imgSrc.length - 4) + "-sd.jpg"}) no-repeat`,
-
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-  };
   return (
     <div>
-      <div className={award.length === 0 ? "hidden" : ""}>
-        <AwardLottie award={award} />
-      </div>
-      <div className="project" onClick={showVideos}>
-        <div className="project-text-and-img-holder">
-          <div className="project-text">
-            <h2>{projectTitle}</h2>
+      <div className="project-card" onClick={showVideos}>
+        <Fade cascade left key={projectTitle}>
+          <div className="project-card-text">
+            <h2>
+              {projectTitle}
+              <div className="project-card-text-horizontal-line"></div>
+            </h2>
+
             <h3>{projectText}</h3>
+            <div className={award === "" ? "hidden" : ""}>
+              <AwardLottie award={award} />
+            </div>
           </div>
-          <img style={lowResImage} src={imgSrc} alt="" />
-        </div>
+        </Fade>
+        <img className="project-card-img" src={imgSrc} alt="" />
       </div>
-      <div className="project-gradient"></div>
     </div>
   );
 };
