@@ -30,22 +30,24 @@ const Project = ({
 
   return (
     <div>
-      <div className="project-card" onClick={showVideos}>
-        <Fade cascade left key={projectTitle}>
-          <div className="project-card-text">
-            <h2>
-              {projectTitle}
-              <div className="project-card-text-horizontal-line"></div>
-            </h2>
+      <Fade>
+        <div className="project-card" onClick={showVideos}>
+          <Fade cascade left key={projectTitle}>
+            <div className="project-card-text">
+              <h2>
+                {projectTitle}
+                <div className="project-card-text-horizontal-line"></div>
+              </h2>
 
-            <h3>{projectText}</h3>
-            <div className={award === "" ? "hidden" : ""}>
-              <AwardLottie award={award} />
+              <h3>{projectText}</h3>
+              <div className={award === "" ? "hidden" : ""}>
+                <AwardLottie award={award} />
+              </div>
             </div>
-          </div>
-        </Fade>
-        <img className="project-card-img" src={imgSrc} alt="" />
-      </div>
+          </Fade>
+          <img className="project-card-img" src={imgSrc} alt="" />
+        </div>
+      </Fade>
     </div>
   );
 };
