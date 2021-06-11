@@ -1,4 +1,5 @@
 import React from "react";
+import Fade from "react-reveal/Fade";
 
 import { Link } from "react-router-dom";
 import "./app.css";
@@ -54,10 +55,15 @@ const MyWorkPage = ({ currentTags, setCurrentTags, videoPanelObject, setVideoPan
     searchBar.classList.toggle("tag-search-field-hidden");
     searchBar.firstChild.focus();
   };
+
   return (
     <div className="my-work">
       {/* video panel */}
-      <VideoPanel videoPanelObject={videoPanelObject} setVideoPanelObject={setVideoPanelObject} />
+      <VideoPanel
+        videoPanelObject={videoPanelObject}
+        setVideoPanelObject={setVideoPanelObject}
+        key={"videoPanel"}
+      />
 
       {/* about me button */}
       <Link to="/">
@@ -79,21 +85,28 @@ const MyWorkPage = ({ currentTags, setCurrentTags, videoPanelObject, setVideoPan
         <SearchForm currentTags={currentTags} setCurrentTags={setCurrentTags} />
       </div>
 
+      {/* disclaimer */}
+      <div className={`disclaimer-container ${currentTags.length < 1 ? "" : "hidden"}`}>
+        <Fade top cascade>
+          <i className="fas fa-chevron-up"></i>
+          <div className="disclaimer">Select tags from above and logos from below</div>
+          <i className="fas fa-chevron-down"></i>
+        </Fade>
+      </div>
+
       {/* projects */}
-      <div id="project-holder">
+      <div className={`project-holder ${currentTags.length < 1 ? "hidden" : ""}`}>
         {projectTagSort().map((project) => (
-          <>
-            <Project
-              award={project.award}
-              projectTitle={project.projectTitle}
-              projectText={project.projectText}
-              imgSrc={project.imgSrc}
-              projectVideos={project.projectVideos}
-              key={project.projectTitle}
-              videoPanelObject={videoPanelObject}
-              setVideoPanelObject={setVideoPanelObject}
-            />
-          </>
+          <Project
+            key={project.projectTitle}
+            award={project.award}
+            projectTitle={project.projectTitle}
+            projectText={project.projectText}
+            imgSrc={project.imgSrc}
+            projectVideos={project.projectVideos}
+            videoPanelObject={videoPanelObject}
+            setVideoPanelObject={setVideoPanelObject}
+          />
         ))}
       </div>
 

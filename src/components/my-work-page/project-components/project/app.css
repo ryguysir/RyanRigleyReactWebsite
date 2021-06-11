@@ -25,11 +25,12 @@
   object-position: 50% 25%;
   z-index: 6;
   opacity: 0.75;
-  filter: contrast(0.3) brightness(0.8) grayscale(100%);
+  filter: contrast(0.5) brightness(0.6) grayscale(50%);
 }
 .project-card-text {
   transition: all var(--project-transition-time) ease-in;
   position: absolute;
+  width: 75%;
   z-index: 7;
   color: white;
   display: flex;

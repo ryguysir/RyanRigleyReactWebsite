@@ -1,4 +1,6 @@
 import React from "react";
+import Fade from "react-reveal/Fade";
+
 import "./app.css";
 import "../../../App.css";
 
@@ -22,11 +24,13 @@ const CompanyLogos = ({ currentTags, setCurrentTags }) => {
     let curScrollPos = document.getElementsByClassName("company-logos-container")[0].scrollLeft;
     elem.scroll(curScrollPos - 200, 0);
   };
+
   return (
     <>
       <div className="company-logos-container-arrow-left" onClick={scrollLeft}>
         <i className="fas fa-chevron-left"></i>
       </div>
+
       <div className="company-logos-container-arrow-right" onClick={scrollRight}>
         <i className="fas fa-chevron-right"></i>
       </div>
@@ -39,7 +43,6 @@ const CompanyLogos = ({ currentTags, setCurrentTags }) => {
             data="./logos/microsoft_logo.svg"
           ></object>
         </div>
-
         <div className="company-logo-holder" onClick={currentProjectsHandler}>
           <object
             className="company-logo-object"

@@ -32,7 +32,7 @@ const Project = ({
     <div>
       <Fade>
         <div className="project-card" onClick={showVideos}>
-          <Fade cascade left key={projectTitle}>
+          <Fade cascade left>
             <div className="project-card-text">
               <h2>
                 {projectTitle}
@@ -45,7 +45,9 @@ const Project = ({
               </div>
             </div>
           </Fade>
-          <img className="project-card-img" src={imgSrc} alt="" />
+          <Fade>
+            <img className="project-card-img" src={imgSrc} alt="" />
+          </Fade>
         </div>
       </Fade>
     </div>

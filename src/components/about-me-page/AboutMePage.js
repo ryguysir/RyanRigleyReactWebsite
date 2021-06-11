@@ -18,7 +18,7 @@ const AboutMePage = ({ showAboutMe, setShowAboutMe }) => {
       {/* header */}
       <AboutMeSection
         myNameIs={true}
-        vidSrc={"./images/paperTexture.jpg"}
+        vidSrc={""}
         body="Video Editor | Motion Graphics Artist | 3D Generalist | Web Developer"
         vidOrImage={false}
         buttons={true}

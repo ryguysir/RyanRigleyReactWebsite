@@ -46,7 +46,7 @@
   z-index: 10;
   color: var(--main-text-color);
   background: var(--background);
-  font-size: 150%;
+  font-size: 120%;
   font-weight: 400;
   display: flex;
   justify-content: center;
@@ -149,10 +149,43 @@
   }
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 500px) {
+  .about-me-footer-text {
+    font-size: 100%;
+  }
   .about-me-container h3 {
-    font-size: 0.5em;
+    width: 65%;
+    font-size: 0.85em;
     font-weight: 500;
     padding: 1em;
+  }
+  .about-me-container i {
+    bottom: 40%;
+    font-size: 150%;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .about-me-footer-text {
+    font-size: 140%;
+  }
+  .about-me-footer-text span {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .about-me-footer-text span {
+    width: 60%;
+  }
+}
+
+@media screen and (max-height: 850px) {
+  .about-me-footer-text {
+    padding-bottom: 7vh;
+  }
+
+  .about-me-footer-text-before {
+    padding: 7vh;
   }
 }

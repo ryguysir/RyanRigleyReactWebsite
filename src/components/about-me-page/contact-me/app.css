@@ -66,3 +66,9 @@
 .hidden {
   display: none;
 }
+
+@media screen and (max-height: 850px) {
+  .return-to-top {
+    padding-bottom: 10vh;
+  }
+}

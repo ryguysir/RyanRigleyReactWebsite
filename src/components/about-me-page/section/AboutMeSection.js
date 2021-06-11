@@ -24,17 +24,21 @@ const AboutMeSection = ({
             {/* lottie animation */}
             <PrimaryLottieAnim />
           </div>
-          <Fade left cascade>
+          <Fade bottom cascade>
             <h3 className={`${centerOrFooter ? "hidden" : ""}`}>{body}</h3>
           </Fade>
           <div className={`bttn-holder ${buttons ? "" : "hidden"}`}>
             <Link to="/my-work">
-              <div className="about-me-bttn">View My Work</div>
+              <Fade cascade>
+                <div className="about-me-bttn">View My Work</div>
+              </Fade>
             </Link>
 
-            <div onClick={scrollToContactMe} className="about-me-bttn">
-              Contact Me
-            </div>
+            <Fade cascade>
+              <div onClick={scrollToContactMe} className="about-me-bttn">
+                Contact Me
+              </div>
+            </Fade>
           </div>
           <i className="fas fa-chevron-down"></i>
         </div>
