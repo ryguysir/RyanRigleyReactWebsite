@@ -51,12 +51,6 @@ const AboutMeSection = ({
           </div>
         </Fade>
 
-        <img
-          alt=""
-          className={`about-me-image ${vidOrImage ? "hidden" : ""}`}
-          tabIndex="0"
-          src={vidSrc}
-        />
         <video
           className={`about-me-video ${vidOrImage ? "" : "hidden"}`}
           tabIndex="0"
