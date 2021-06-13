@@ -11,7 +11,7 @@ const ProjectVideo = ({ videoSrc }) => {
       frameBorder="0"
       allowFullScreen
       loading="lazy"
-      src={`https://player.vimeo.com/video/${videoSrc === undefined ? "516839250" : videoSrc}`}
+      src={`https://player.vimeo.com/video/${videoSrc}`}
       alt=""
     />
   );

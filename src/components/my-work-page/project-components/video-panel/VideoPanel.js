@@ -1,11 +1,13 @@
 import React from "react";
+import Fade from "react-reveal/Fade";
+
 import "./app.css";
 import "../../../../App.css";
 
 //import components
 import ProjectVideo from "./ProjectVideo";
 
-const VideoPanel = ({ videoPanelObject, setVideoPanelObject, setVideoPanelPosition }) => {
+const VideoPanel = ({ videoPanelObject, setVideoPanelObject }) => {
   const nextVid = () => {
     let curNumber = videoPanelObject.videoNumber;
     if (videoPanelObject.videoNumber < videoPanelObject.videos.length - 1) {
@@ -25,7 +27,12 @@ const VideoPanel = ({ videoPanelObject, setVideoPanelObject, setVideoPanelPositi
     setVideoPanelObject({ ...videoPanelObject, videoNumber: curNumber });
   };
   const returnToProjects = () => {
-    setVideoPanelObject({ ...videoPanelObject, hidden: !videoPanelObject.hidden, videos: [] });
+    setVideoPanelObject({
+      ...videoPanelObject,
+      hidden: !videoPanelObject.hidden,
+      videos: [],
+      videoNumber: 0,
+    });
   };
   return (
     <div>
@@ -34,6 +41,11 @@ const VideoPanel = ({ videoPanelObject, setVideoPanelObject, setVideoPanelPositi
           <div className="return-to-projects" onClick={returnToProjects}>
             <i className="fas fa-chevron-up"></i>
             <p>Return to projects</p>
+          </div>
+          <div className="video-panel-number">
+            <Fade top cascade>
+              {`${videoPanelObject.videoNumber + 1} of ${videoPanelObject.videos.length}`}
+            </Fade>
           </div>
           <div className="video-panel-iframe">
             <ProjectVideo videoSrc={videoPanelObject.videos[videoPanelObject.videoNumber]} />

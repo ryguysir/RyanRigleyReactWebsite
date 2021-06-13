@@ -79,6 +79,13 @@
   user-select: none;
   cursor: pointer;
 }
+.video-panel-number {
+  color: rgb(148, 148, 148);
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
 .return-to-projects {
   text-align: center;
   position: relative;

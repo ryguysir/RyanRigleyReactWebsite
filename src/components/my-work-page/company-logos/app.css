@@ -48,7 +48,6 @@
 }
 
 .company-logo-holder {
-  animation: logoFadeIn 1s ease-in-out;
   margin: 10px;
   position: relative;
   width: 75px;
@@ -67,6 +66,7 @@
   cursor: pointer;
 }
 .company-logo-object {
+  animation: fadeInUp 1s ease-in-out;
   content: "";
   transition: all var(--project-transition-time) ease-out;
   width: 100%;
@@ -87,13 +87,15 @@
   display: none;
 }
 
-@keyframes logoFadeIn {
-  0% {
-    transform: translateY(-50px);
+@keyframes fadeInUp {
+  from {
     opacity: 0;
+    -webkit-transform: translateY(10%);
+    transform: translateY(100%);
   }
-  100% {
-    transform: translateY(0px);
-    opacity: 1;
+  to {
+    opacity: 0.25;
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%);
   }
 }
