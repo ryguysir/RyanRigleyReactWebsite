@@ -24,7 +24,6 @@ function App() {
 
           <Route
             path="/my-work"
-            exact
             render={(props) => (
               <MyWorkPage
                 {...props}
