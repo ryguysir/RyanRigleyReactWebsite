@@ -17,10 +17,8 @@
 }
 
 .project-card-img {
-  transition: all var(--project-transition-time) ease-in;
   position: absolute;
-  width: 100%;
-  height: 100%;
+  left: 0;
   object-fit: cover;
   object-position: 50% 25%;
   z-index: 6;

@@ -14,6 +14,7 @@ import CompanyLogos from "./company-logos/CompanyLogos";
 
 const MyWorkPage = ({ currentTags, setCurrentTags, videoPanelObject, setVideoPanelObject }) => {
   //variables
+
   const tagsText = [
     "Corporate",
     "Technology",

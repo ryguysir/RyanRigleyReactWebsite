@@ -1,5 +1,6 @@
 import React from "react";
 import Fade from "react-reveal/Fade";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 import "./app.css";
 import "../../../../App.css";
@@ -45,9 +46,15 @@ const Project = ({
               </div>
             </div>
           </Fade>
-          <Fade>
-            <img className="project-card-img" src={imgSrc} alt="" />
-          </Fade>
+          <LazyLoadImage
+            className="project-card-img"
+            height="100%"
+            width="100%"
+            left="0%"
+            effect="blur"
+            src={imgSrc}
+            alt={`image for ${projectTitle}`}
+          />
         </div>
       </Fade>
     </div>

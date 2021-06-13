@@ -30,14 +30,10 @@
 .about-me-container h3 {
   width: 100%;
   color: var(--main-text-color);
-  background: var(--background);
-  border: 0.15em solid var(--limeGreen);
   font-weight: 400;
   align-self: center;
-  padding: 0.5em;
   max-width: 90vw;
   border-radius: 0.5em;
-  overflow: hidden;
 }
 .about-me-footer-text {
   position: absolute;
