@@ -1,4 +1,5 @@
 import React from "react";
+import Fade from "react-reveal/Fade";
 
 import "./app.css";
 import "../../../App.css";
@@ -14,7 +15,9 @@ const Tag = ({ text, currentTags, setCurrentTags }) => {
   };
   return (
     <div onClick={currentProjectsHandler} className="tag">
-      {text}
+      <Fade right cascade>
+        {text}
+      </Fade>
     </div>
   );
 };

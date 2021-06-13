@@ -41,47 +41,6 @@
   background: var(--limeGreen);
 }
 
-.search-bttn {
-  grid-column: 1;
-}
-.tag-search-field {
-  transition: all var(--tag-transition-time) ease;
-  position: relative;
-  height: 30px;
-  transform: scale(1);
-  grid-column: 2/4;
-
-  background: var(--main-tag-color);
-
-  border-radius: 5px;
-
-  display: flex;
-  align-items: center;
-}
-.tag-search-field-hidden {
-  transform: scale(0);
-}
-.tag-search-field input {
-  position: relative;
-  margin: 1%;
-  height: 20px;
-  width: 100%;
-  outline: none;
-  border: none;
-  border-radius: inherit;
-  background: #6e92b4;
-  color: var(--main-text-color);
-  text-align: center;
-}
-.tag-search-field-submit {
-  transition: all var(--main-transition-time) ease-in-out;
-  margin: 3%;
-  display: flex;
-  align-items: center;
-  color: var(--main-text-color);
-  cursor: pointer;
-}
-
 .hidden {
   display: none;
 }

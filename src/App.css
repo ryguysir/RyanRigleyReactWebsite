@@ -116,9 +116,7 @@ a {
     background: rgba(0, 193, 103, 0.521);
     user-select: none;
   }
-  .tag-search-field-submit:hover {
-    color: var(--limeGreen);
-  }
+
   .company-logo-holder:hover .company-logo-object {
     opacity: 1;
     filter: grayscale(0) invert(0);

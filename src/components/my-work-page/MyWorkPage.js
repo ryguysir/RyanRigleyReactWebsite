@@ -30,26 +30,29 @@ const MyWorkPage = ({ currentTags, setCurrentTags, videoPanelObject, setVideoPan
     "Browse All",
   ];
   const projects = require("./project-components/projectCreator.js");
-
-  //functions
   const projectTagSort = () => {
-    if (currentTags.length > 0) {
-      return projects.default.filter((project) => {
-        let count = 0;
-        for (let i = 0; i < currentTags.length; i++) {
-          if (project.projectTags.includes(currentTags[i].toLowerCase())) {
-            count++;
-          } else {
-            break;
-          }
+    let finalArr = [];
+    projects.default.forEach((project) => {
+      //this first for loop sets up a regex for the currentTag
+      let count = 0;
+      for (let i = 0; i < currentTags.length; i++) {
+        const regex = new RegExp(`(${currentTags[i].split(" ").join("")})`, "gi");
+
+        if (project.projectTags.join("*").split(" ").join("").match(regex) !== null) {
+          count++;
+        } else {
+          break;
         }
-        return count === currentTags.length ? project : null;
-      });
-    } else {
-      return [];
-    }
+      }
+      if (count === currentTags.length) {
+        finalArr.push(project);
+      }
+    });
+    return finalArr;
   };
+
   const showSearch = (elem) => {
+    setCurrentTags([]);
     elem.currentTarget.classList.toggle("tagToggled");
     let searchBar = document.querySelector(".tag-search-field");
     searchBar.classList.toggle("tag-search-field-hidden");
@@ -58,25 +61,32 @@ const MyWorkPage = ({ currentTags, setCurrentTags, videoPanelObject, setVideoPan
 
   return (
     <div className="my-work">
-      {/* video panel */}
+      {/*___________________________________video panel __________________________________ */}
       <VideoPanel
         videoPanelObject={videoPanelObject}
         setVideoPanelObject={setVideoPanelObject}
         key={"videoPanel"}
       />
 
-      {/* about me button */}
+      {/*_________________________________about me button__________________________________*/}
       <Link to="/">
-        <div className="my-work-bttn">
-          <i
-            className="fas fa-chevron-left"
-            style={{ marginRight: 20 + "px", marginLeft: -5 + "px" }}
-          ></i>
-          About Me
+        <div
+          className="my-work-bttn"
+          onClick={() => {
+            setCurrentTags([]);
+          }}
+        >
+          <Fade top cascade>
+            <i
+              className="fas fa-chevron-left"
+              style={{ marginRight: 20 + "px", marginLeft: -5 + "px" }}
+            ></i>
+            About Me
+          </Fade>
         </div>
       </Link>
 
-      {/* tags */}
+      {/*_____________________________________tags________________________________________ */}
       <div id="tag-container">
         {tagsText.map((item) => (
           <Tag text={item} key={item} currentTags={currentTags} setCurrentTags={setCurrentTags} />
@@ -85,7 +95,7 @@ const MyWorkPage = ({ currentTags, setCurrentTags, videoPanelObject, setVideoPan
         <SearchForm currentTags={currentTags} setCurrentTags={setCurrentTags} />
       </div>
 
-      {/* disclaimer */}
+      {/*__________________________________disclaimer______________________________________*/}
       <div className={`disclaimer-container ${currentTags.length < 1 ? "" : "hidden"}`}>
         <Fade top cascade>
           <i className="fas fa-chevron-up"></i>
@@ -94,7 +104,7 @@ const MyWorkPage = ({ currentTags, setCurrentTags, videoPanelObject, setVideoPan
         </Fade>
       </div>
 
-      {/* projects */}
+      {/*___________________________________projects_______________________________________*/}
       <div className={`project-holder ${currentTags.length < 1 ? "hidden" : ""}`}>
         {projectTagSort().map((project) => (
           <Project
@@ -110,7 +120,7 @@ const MyWorkPage = ({ currentTags, setCurrentTags, videoPanelObject, setVideoPan
         ))}
       </div>
 
-      {/* company logos */}
+      {/*________________________________company logos_____________________________________*/}
       <CompanyLogos currentTags={currentTags} setCurrentTags={setCurrentTags} />
     </div>
   );

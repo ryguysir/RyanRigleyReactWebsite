@@ -25,7 +25,6 @@ const VideoPanel = ({ videoPanelObject, setVideoPanelObject, setVideoPanelPositi
     setVideoPanelObject({ ...videoPanelObject, videoNumber: curNumber });
   };
   const returnToProjects = () => {
-    console.log("return to projects");
     setVideoPanelObject({ ...videoPanelObject, hidden: !videoPanelObject.hidden, videos: [] });
   };
   return (

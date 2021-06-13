@@ -1,5 +1,4 @@
 import React from "react";
-import Fade from "react-reveal/Fade";
 
 import "./app.css";
 import "../../../App.css";
@@ -8,6 +7,7 @@ const CompanyLogos = ({ currentTags, setCurrentTags }) => {
   const currentProjectsHandler = (e) => {
     e.target.firstChild.classList.toggle("company-logo-object-toggled");
     let val = e.target.firstChild.attributes[2].nodeValue;
+    console.log(val);
     if ([...currentTags].includes(val)) {
       setCurrentTags([...currentTags].filter((item) => item !== val));
     } else {

@@ -446,15 +446,7 @@ let narcosMexico = new ProjectObject();
 narcosMexico.projectTitle = "Narcos: Mexico";
 narcosMexico.projectText = "Editor";
 narcosMexico.imgSrc = "images/narcosMexico.jpg";
-narcosMexico.projectTags = [
-  "drama",
-  "action",
-  "netflix",
-  "historical",
-  "browse all",
-  "awards",
-  "favorites",
-];
+narcosMexico.projectTags = ["drama", "action", "netflix", "historical", "browse all", "awards"];
 narcosMexico.projectVideos = ["292769952"];
 narcosMexico.award = "key";
 projects.push(narcosMexico);
@@ -474,7 +466,6 @@ narcosS1.projectTags = [
   "Narcos: Season 1",
   "browse all",
   "awards",
-  "favorites",
 ];
 narcosS1.projectVideos = [
   "208256474",
@@ -875,7 +866,6 @@ theSecretLifeofWalterMitty.projectTags = [
   "The Secret Life of Walter Mitty",
   "browse all",
   "awards",
-  "favorites",
   "20th",
 ];
 theSecretLifeofWalterMitty.projectVideos = ["208428637", "208428618"];

@@ -2,7 +2,7 @@
 .about-me {
   height: 100vh;
   overflow: auto;
-  scroll-snap-type: y mandatory;
+  scroll-snap-type: y proximity;
   scroll-behavior: smooth;
 }
 .about-me-section {
@@ -37,6 +37,7 @@
   padding: 0.5em;
   max-width: 90vw;
   border-radius: 0.5em;
+  overflow: hidden;
 }
 .about-me-footer-text {
   position: absolute;
