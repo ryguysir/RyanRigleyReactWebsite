@@ -1,6 +1,7 @@
-import React from "react";
+import React, { lazy, Suspense } from "react";
 import { Link } from "react-router-dom";
 import Fade from "react-reveal/Fade";
+import Slide from "react-reveal/Slide";
 import "./app.css";
 import "../../../App.css";
 
@@ -16,6 +17,7 @@ const AboutMeSection = ({
   scrollToContactMe,
   centerOrFooter,
 }) => {
+  const BackgroundVideo = lazy(() => import("./BackgroundVideo"));
   return (
     <div>
       <div className="about-me-section">
@@ -33,36 +35,29 @@ const AboutMeSection = ({
                 <div className="about-me-bttn">View My Work</div>
               </Fade>
             </Link>
-
+            <i className="fas fa-chevron-down"></i>
             <Fade cascade>
               <div onClick={scrollToContactMe} className="about-me-bttn">
                 Contact Me
               </div>
             </Fade>
           </div>
+        </div>
+        <div className={`bottom-chevron ${centerOrFooter ? "" : "hidden"}`}>
           <i className="fas fa-chevron-down"></i>
         </div>
-        <Fade bottom>
-          <div className={`about-me-footer-text-before ${centerOrFooter ? "" : "hidden"}`}></div>
+        <Slide bottom>
+          {/* <div className={`about-me-footer-text-before ${centerOrFooter ? "" : "hidden"}`}></div> */}
           <div className={`about-me-footer-text ${centerOrFooter ? "" : "hidden"}`}>
             <Fade bottom>
               <span>{body}</span>
             </Fade>
           </div>
-        </Fade>
+        </Slide>
 
-        <video
-          className={`about-me-video ${vidOrImage ? "" : "hidden"}`}
-          tabIndex="0"
-          loading="lazy"
-          muted={true}
-          autoPlay={true}
-          loop={true}
-          autobuffer="true"
-          preload="auto"
-        >
-          <source type='video/mp4;codecs="avc1.42E01E, mp4a.40.2"' src={vidSrc} />
-        </video>
+        <Suspense fallback={<div></div>}>
+          <BackgroundVideo vidOrImage={vidOrImage} vidSrc={vidSrc} />
+        </Suspense>
       </div>
     </div>
   );

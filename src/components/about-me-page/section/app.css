@@ -14,16 +14,17 @@
   display: grid;
   justify-items: center;
   align-items: center;
+  align-content: center;
 }
 /* Textbox _________________________*/
 .about-me-container {
   position: relative;
-  height: 100%;
   display: grid;
-  grid-template-rows: auto;
+  height: 100%;
+  grid-template-rows: repeat(auto-fit, minmax(150px, 1fr));
   justify-items: center;
   align-content: center;
-  gap: 10%;
+  gap: 20%;
   z-index: 2;
   text-align: center;
 }
@@ -43,6 +44,7 @@
   z-index: 10;
   color: var(--main-text-color);
   background: var(--background);
+  border-top: 3vh solid var(--limeGreen);
   font-size: 120%;
   font-weight: 400;
   display: flex;
@@ -50,7 +52,6 @@
   align-items: center;
   text-align: center;
   filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 1));
-  clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 100%);
 }
 .about-me-footer-text-before {
   position: absolute;
@@ -66,17 +67,26 @@
 .about-me-footer-text span {
   width: 90%;
 }
+.bottom-chevron {
+  animation: chevronDownAnim 2s ease infinite;
+  position: absolute;
+  color: white;
+  bottom: 40%;
+  z-index: 12;
+  font-size: 150%;
+}
 /* Buttons _________________________*/
 .bttn-holder {
   position: relative;
+  margin-top: 5%;
   z-index: 2;
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  gap: 30%;
   justify-content: center;
   align-items: center;
   justify-items: center;
   text-align: center;
+  z-index: 10;
 }
 .about-me-bttn {
   transition: all 0.25s ease-in;
@@ -96,8 +106,7 @@
 /* Icons _________________________*/
 .about-me-container i {
   animation: chevronDownAnim 2s ease infinite;
-  position: absolute;
-  bottom: 30%;
+  position: relative;
   font-size: 200%;
   text-align: center;
   color: rgb(182, 182, 182);
@@ -106,8 +115,11 @@
 /* Video _________________________*/
 .about-me-video {
   position: absolute;
+  left: 50%;
   top: 0;
+  transform: translateX(-50%);
   height: 80vmax;
+  object-fit: cover;
   opacity: 1;
   z-index: 1;
 }
@@ -159,6 +171,9 @@
   .about-me-container i {
     bottom: 40%;
     font-size: 150%;
+  }
+  .bttn-holder {
+    gap: 10%;
   }
 }
 
