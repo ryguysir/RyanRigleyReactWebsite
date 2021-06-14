@@ -39,7 +39,7 @@ agent47.projectTags = [
   "browse all",
   "20th",
   "fox",
-
+  "Trailers",
   "bloody",
   "assassin",
   "video game",
@@ -67,6 +67,7 @@ assassinsCreed.projectTags = [
   "Michael Fassbender",
   "Marion Cotillard",
   "Jeremy Irons",
+  "tv",
 ];
 assassinsCreed.projectVideos = ["209163244", "209163276"];
 projects.push(assassinsCreed);
@@ -89,6 +90,7 @@ aVeryMurrayChristmas.projectTags = [
   "George Clooney",
   "Miley Cyrus",
   "Rashida Jones",
+  "Trailers",
 ];
 aVeryMurrayChristmas.projectVideos = ["209141658", "209141623", "209141581"];
 projects.push(aVeryMurrayChristmas);
@@ -112,6 +114,8 @@ boschS2.projectTags = [
   "crime",
   "police",
   "detective",
+  "Trailers",
+  "tv",
 ];
 boschS2.projectVideos = ["209163500", "209163424", "209163500"];
 projects.push(boschS2);
@@ -136,6 +140,7 @@ dawnOfThePlanetOfTheApes.projectTags = [
   "Jason Clarke",
   "20th",
   "fox",
+  "tv",
 ];
 dawnOfThePlanetOfTheApes.projectVideos = ["209163648", "209163616", "209163695", "20th"];
 projects.push(dawnOfThePlanetOfTheApes);
@@ -177,6 +182,7 @@ eddieTheEagle.projectTags = [
   "skiing",
   "sports",
   "true story",
+  "tv",
 ];
 eddieTheEagle.projectVideos = ["209163863", "209163824"];
 projects.push(eddieTheEagle);
@@ -200,6 +206,7 @@ extinction.projectTags = [
   "invasion",
   "Michael Peña Pena",
   "Lizzy Caplan",
+  "Trailers",
 ];
 extinction.projectVideos = ["279750518"];
 projects.push(extinction);
@@ -225,6 +232,7 @@ fantasticBeasts.projectTags = [
   "warner bros",
   "wb",
   "Colin Farrell",
+  "tv",
 ];
 fantasticBeasts.projectVideos = ["209163920"];
 projects.push(fantasticBeasts);
@@ -247,6 +255,7 @@ ifIStay.projectTags = [
   "fox",
   "adaptation",
   "love",
+  "tv",
 ];
 ifIStay.projectVideos = ["209163980"];
 projects.push(ifIStay);
@@ -299,6 +308,7 @@ jackRyan.projectTags = [
   "Keira Knightley",
   "Tom Clancy",
   "Kenneth Branagh",
+  "tv",
 ];
 jackRyan.projectVideos = ["125547875"];
 projects.push(jackRyan);
@@ -318,6 +328,7 @@ johnHenry.projectTags = [
   "browse all",
   "seven bucks",
   "dwayne the rock johnson",
+  "Trailers",
 ];
 johnHenry.projectVideos = ["312820873"];
 projects.push(johnHenry);
@@ -341,6 +352,7 @@ joy.projectTags = [
   "Bradley Cooper",
   "true story",
   "mob",
+  "tv",
 ];
 joy.projectVideos = ["209164131", "209164107"];
 projects.push(joy);
@@ -365,6 +377,7 @@ logan.projectTags = [
   "wolverine",
   "super hero",
   "comic books",
+  "tv",
 ];
 logan.projectVideos = ["208255115", "208255125", "209509332", "209509303"];
 projects.push(logan);
@@ -598,6 +611,7 @@ moneyHeistS2.projectTags = [
   "robbery",
   "spain",
   "foreign",
+  "Trailers",
 ];
 moneyHeistS2.projectVideos = ["279750491"];
 projects.push(moneyHeistS2);
@@ -622,6 +636,7 @@ narcosMexico.projectTags = [
   "violence",
   "pablo escobar",
   "cartel",
+  "Trailers",
 ];
 narcosMexico.projectVideos = ["292769952"];
 narcosMexico.award = "key";
@@ -649,6 +664,7 @@ narcosS1.projectTags = [
   "pablo escobar",
   "pedro pascal",
   "cartel",
+  "tv",
 ];
 narcosS1.projectVideos = [
   "208256474",
@@ -686,6 +702,8 @@ narcosS2.projectTags = [
   "pablo escobar",
   "pedro pascal",
   "cartel",
+  "Trailers",
+  "tv",
 ];
 narcosS2.projectVideos = ["208770645", "208770547", "208770473"];
 narcosS2.award = "golden";
@@ -712,6 +730,7 @@ narcosS3.projectTags = [
   "pablo escobar",
   "pedro pascal",
   "cartel",
+  "tv",
 ];
 narcosS3.projectVideos = ["279754111", "279753867", "279753924", "279753982"];
 projects.push(narcosS3);
@@ -731,6 +750,7 @@ oculus.projectTags = [
   "scary",
   "ghosts",
   "Brenton Thwaites",
+  "tv",
 ];
 oculus.projectVideos = ["209164279"];
 projects.push(oculus);
@@ -753,6 +773,7 @@ ozarkS1.projectTags = [
   "Jason Bateman",
   "Laura Linney",
   "cartel",
+  "tv",
 ];
 ozarkS1.projectVideos = ["272281344"];
 projects.push(ozarkS1);
@@ -796,6 +817,7 @@ paperTowns.projectTags = [
   "Cara Delevingne",
   "adaptation",
   "love",
+  "tv",
 ];
 paperTowns.projectVideos = ["208253092", "208252719", "208252904", "208252887"];
 projects.push(paperTowns);
@@ -815,6 +837,7 @@ peoplePlacesThings.projectTags = [
   "film arcade",
   "fatherhood",
   "Jemaine Clement",
+  "Trailers",
 ];
 peoplePlacesThings.projectVideos = ["209164301"];
 projects.push(peoplePlacesThings);
@@ -840,6 +863,7 @@ petesDragon.projectTags = [
   "fantasy",
   "kids",
   "adaptation",
+  "tv",
 ];
 petesDragon.projectVideos = [
   "209164720",
@@ -867,6 +891,7 @@ powerRangers.projectTags = [
   "series",
   "robot",
   "saban",
+  "tv",
 ];
 powerRangers.projectVideos = ["209510220", "209510166"];
 projects.push(powerRangers);
@@ -890,6 +915,7 @@ rampage.projectTags = [
   "wb",
   "monkey",
   "monster",
+  "tv",
 ];
 rampage.projectVideos = ["272281886", "272282009", "272281838"];
 rampage.award = "key";
@@ -912,6 +938,7 @@ runnerRunner.projectTags = [
   "Justin Timberlake",
   "crime",
   "gambling",
+  "tv",
 ];
 runnerRunner.projectVideos = ["312819548"];
 projects.push(runnerRunner);
@@ -989,6 +1016,7 @@ shazam.projectTags = [
   "wb",
   "super hero",
   "comic books",
+  "Trailers",
 ];
 shazam.projectVideos = ["281502145"];
 projects.push(shazam);
@@ -1017,7 +1045,7 @@ let theBoy = new ProjectObject();
 theBoy.projectTitle = "The Boy";
 theBoy.projectText = "Editor";
 theBoy.imgSrc = "images/theBoy.jpg";
-theBoy.projectTags = ["horror", "The Boy", "browse all", "stx"];
+theBoy.projectTags = ["horror", "The Boy", "browse all", "stx", "tv"];
 theBoy.projectVideos = ["209165016", "209164905", "209164975", "209164928"];
 projects.push(theBoy);
 
@@ -1039,6 +1067,7 @@ theFinestHours.projectTags = [
   "true story",
   "Casey Affleck",
   "Ben Foster",
+  "tv",
 ];
 theFinestHours.projectVideos = ["209510595", "209510549"];
 projects.push(theFinestHours);
@@ -1063,6 +1092,7 @@ theGetDown.projectTags = [
   "Yahya Abdul-Mateen II",
   "Jaden Smith",
   "musical",
+  "Trailers",
 ];
 theGetDown.projectVideos = ["208769604"];
 theGetDown.award = "key";
@@ -1084,6 +1114,7 @@ theGreatWall.projectTags = [
   "pedro pascal",
   "china",
   "monster",
+  "tv",
 ];
 theGreatWall.projectVideos = ["208768902"];
 projects.push(theGreatWall);
@@ -1107,6 +1138,7 @@ theLongestRide.projectTags = [
   "Scott Eastwood",
   "alan alda",
   "love",
+  "tv",
 ];
 theLongestRide.projectVideos = [
   "208767181",
@@ -1138,6 +1170,7 @@ theMazeRunner.projectTags = [
   "Dylan O'Brien",
   "monster",
   "adaptation",
+  "tv",
 ];
 theMazeRunner.projectVideos = ["209164210"];
 projects.push(theMazeRunner);
@@ -1160,6 +1193,7 @@ theMazeRunnerScorchTrials.projectTags = [
   "Dylan O'Brien",
   "monster",
   "adaptation",
+  "tv",
 ];
 theMazeRunnerScorchTrials.projectVideos = ["209164258"];
 projects.push(theMazeRunnerScorchTrials);
@@ -1182,6 +1216,7 @@ theMountainBetweenUs.projectTags = [
   "Kate Winslet",
   "Idris Elba",
   "love",
+  "tv",
 ];
 theMountainBetweenUs.projectVideos = ["279757097"];
 projects.push(theMountainBetweenUs);
@@ -1206,6 +1241,7 @@ theSecretLifeofWalterMitty.projectTags = [
   "Kristen Wiig",
   "Ben Stiller",
   "adaptation",
+  "tv",
 ];
 theSecretLifeofWalterMitty.projectVideos = ["208428637", "208428618"];
 theSecretLifeofWalterMitty.award = "key";
@@ -1230,6 +1266,7 @@ theWolverine.projectTags = [
   "x-men xmen",
   "super hero",
   "comic books",
+  "tv",
 ];
 theWolverine.projectVideos = ["208427854", "208427841"];
 theWolverine.award = "key";
@@ -1272,6 +1309,7 @@ xMenDaysOfFuturePast.projectTags = [
   "Jennifer Lawrence",
   "super hero",
   "comic books",
+  "tv",
 ];
 xMenDaysOfFuturePast.projectVideos = [
   "208222198",

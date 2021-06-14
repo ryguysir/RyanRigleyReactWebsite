@@ -66,13 +66,14 @@
   cursor: pointer;
 }
 .company-logo-object {
-  animation: fadeInUp 1s ease-in-out;
+  /* animation: fadeInUp 1s ease-in-out; */
   content: "";
   transition: all var(--project-transition-time) ease-out;
   width: 100%;
   height: 100%;
   opacity: 0.25;
   filter: grayscale(1) invert(1);
+  user-select: none;
 }
 .company-logo-object-toggled {
   opacity: 1;

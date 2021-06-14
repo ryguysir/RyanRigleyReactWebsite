@@ -28,9 +28,12 @@ const MyWorkPage = ({ currentTags, setCurrentTags, videoPanelObject, setVideoPan
     "Historical",
     "Awards",
     "Favorites",
+    "Trailers",
+    "TV",
     "Browse All",
   ];
   const projects = require("./project-components/projectCreator.js");
+
   const projectTagSort = () => {
     let finalArr = [];
     projects.default.forEach((project) => {
@@ -62,14 +65,14 @@ const MyWorkPage = ({ currentTags, setCurrentTags, videoPanelObject, setVideoPan
 
   return (
     <div className="my-work">
-      {/*___________________________________video panel __________________________________ */}
+      {/*_____________________________video panel _____________________________ */}
       <VideoPanel
         videoPanelObject={videoPanelObject}
         setVideoPanelObject={setVideoPanelObject}
         key={"videoPanel"}
       />
 
-      {/*_________________________________about me button__________________________________*/}
+      {/*__________________________about me button______________________________*/}
       <Link to="/">
         <div
           className="my-work-bttn"
@@ -87,7 +90,7 @@ const MyWorkPage = ({ currentTags, setCurrentTags, videoPanelObject, setVideoPan
         </div>
       </Link>
 
-      {/*_____________________________________tags________________________________________ */}
+      {/*_______________________________tags___________________________________ */}
       <div id="tag-container">
         {tagsText.map((item) => (
           <Tag text={item} key={item} currentTags={currentTags} setCurrentTags={setCurrentTags} />
@@ -96,7 +99,7 @@ const MyWorkPage = ({ currentTags, setCurrentTags, videoPanelObject, setVideoPan
         <SearchForm currentTags={currentTags} setCurrentTags={setCurrentTags} />
       </div>
 
-      {/*__________________________________disclaimer______________________________________*/}
+      {/*_____________________________disclaimer________________________________*/}
       <div className={`disclaimer-container ${currentTags.length < 1 ? "" : "hidden"}`}>
         <Fade top cascade>
           <i className="fas fa-chevron-up"></i>
@@ -105,7 +108,7 @@ const MyWorkPage = ({ currentTags, setCurrentTags, videoPanelObject, setVideoPan
         </Fade>
       </div>
 
-      {/*___________________________________projects_______________________________________*/}
+      {/*_____________________________projects____________________________________*/}
       <div className={`project-holder ${currentTags.length < 1 ? "hidden" : ""}`}>
         {projectTagSort().map((project) => (
           <Project
@@ -121,7 +124,7 @@ const MyWorkPage = ({ currentTags, setCurrentTags, videoPanelObject, setVideoPan
         ))}
       </div>
 
-      {/*________________________________company logos_____________________________________*/}
+      {/*___________________________company logos_____________________________*/}
       <CompanyLogos currentTags={currentTags} setCurrentTags={setCurrentTags} />
     </div>
   );

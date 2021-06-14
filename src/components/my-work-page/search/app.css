@@ -6,7 +6,7 @@
   position: relative;
   height: 30px;
   transform: scale(1);
-  grid-column: 2/4;
+  grid-column: 2/6;
 
   background: var(--main-tag-color);
 

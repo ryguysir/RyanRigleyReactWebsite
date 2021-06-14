@@ -1,4 +1,5 @@
 import React from "react";
+import Slide from "react-reveal/Slide";
 
 import "./app.css";
 import "../../../App.css";
@@ -38,19 +39,21 @@ const CompanyLogos = ({ currentTags, setCurrentTags }) => {
       <div className="company-logos-container-arrow-right" onClick={scrollRight}>
         <i className="fas fa-chevron-right"></i>
       </div>
-      <div className="company-logos-container">
-        {logoData.default.map((item) => {
-          return (
-            <LogoObject
-              key={item.data}
-              label={item.label}
-              alt={item.alt}
-              data={item.data}
-              currentProjectsHandler={currentProjectsHandler}
-            />
-          );
-        })}
-      </div>
+      <Slide bottom>
+        <div className="company-logos-container">
+          {logoData.default.map((item) => {
+            return (
+              <LogoObject
+                key={item.data}
+                label={item.label}
+                alt={item.alt}
+                data={item.data}
+                currentProjectsHandler={currentProjectsHandler}
+              />
+            );
+          })}
+        </div>
+      </Slide>
     </>
   );
 };
