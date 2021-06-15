@@ -31,7 +31,7 @@ const CompanyLogos = ({ currentTags, setCurrentTags }) => {
   };
 
   return (
-    <>
+    <div className="company-logos-container-scroll">
       <div className="company-logos-container-arrow-left" onClick={scrollLeft}>
         <i className="fas fa-chevron-left"></i>
       </div>
@@ -54,7 +54,7 @@ const CompanyLogos = ({ currentTags, setCurrentTags }) => {
           })}
         </div>
       </Slide>
-    </>
+    </div>
   );
 };
 

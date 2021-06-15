@@ -1,27 +1,37 @@
 /* company logos section _________________________*/
-.company-logos-container {
+.company-logos-container-scroll {
   position: fixed;
   width: 100vw;
   height: 15vh;
   bottom: 0;
-  overflow: scroll;
+  overflow: hidden;
   background: #415f7c;
   margin-top: 50px;
+  filter: drop-shadow(0px 0px 30px rgba(0, 0, 0, 0.35));
+  z-index: 19;
+  display: flex;
+  align-items: center;
+}
+.company-logos-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow-x: scroll;
+  padding-top: 20px;
   scroll-behavior: smooth;
   display: grid;
   grid-template-columns: repeat(18, 1fr);
   grid-template-rows: 1fr;
   align-items: center;
   justify-items: center;
-  filter: drop-shadow(0px 0px 30px rgba(0, 0, 0, 0.35));
   cursor: pointer;
   z-index: 20;
 }
 .company-logos-container-arrow-left {
   position: fixed;
   bottom: 0;
-  width: 5vw;
-  height: 5vh;
+  width: 3.5vw;
+  height: 3.5vh;
   background: #2c3e5093;
   z-index: 100;
   cursor: pointer;
@@ -35,8 +45,8 @@
   position: fixed;
   bottom: 0;
   right: 0;
-  width: 5vw;
-  height: 5vh;
+  width: 3.5vw;
+  height: 3.5vh;
   background: #2c3e5093;
   z-index: 100;
   cursor: pointer;

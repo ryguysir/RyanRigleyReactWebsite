@@ -5,7 +5,7 @@ import "../../../App.css";
 const PrimaryLottieAnim = ({ currentTags }) => {
   return (
     <lottie-player
-      src="https://assets2.lottiefiles.com/packages/lf20_3zg6fgdq.json"
+      src="https://assets10.lottiefiles.com/packages/lf20_kygwbjn9.json"
       autoplay
       loop
     ></lottie-player>

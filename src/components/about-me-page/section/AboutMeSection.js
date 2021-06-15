@@ -26,9 +26,9 @@ const AboutMeSection = ({
             {/* lottie animation */}
             <PrimaryLottieAnim />
           </div>
-          <Fade bottom cascade>
+          {/* <Fade bottom cascade>
             <h3 className={`${centerOrFooter ? "hidden" : ""}`}>{body}</h3>
-          </Fade>
+          </Fade> */}
           <div className={`bttn-holder ${buttons ? "" : "hidden"}`}>
             <Link to="/my-work">
               <Fade cascade>
