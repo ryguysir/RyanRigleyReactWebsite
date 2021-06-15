@@ -121,4 +121,10 @@ a {
     opacity: 1;
     filter: grayscale(0) invert(0);
   }
+  .company-logos-container-arrow-left:hover i {
+    transform: scale(1.25);
+  }
+  .company-logos-container-arrow-right:hover i {
+    transform: scale(1.25);
+  }
 }

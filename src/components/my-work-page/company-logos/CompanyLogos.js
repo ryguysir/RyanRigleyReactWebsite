@@ -22,12 +22,12 @@ const CompanyLogos = ({ currentTags, setCurrentTags }) => {
   const scrollRight = () => {
     let elem = document.getElementsByClassName("company-logos-container")[0];
     let curScrollPos = document.getElementsByClassName("company-logos-container")[0].scrollLeft;
-    elem.scroll(curScrollPos + 200, 0);
+    elem.scroll(curScrollPos + 400, 0);
   };
   const scrollLeft = () => {
     let elem = document.getElementsByClassName("company-logos-container")[0];
     let curScrollPos = document.getElementsByClassName("company-logos-container")[0].scrollLeft;
-    elem.scroll(curScrollPos - 200, 0);
+    elem.scroll(curScrollPos - 400, 0);
   };
 
   return (
@@ -35,7 +35,6 @@ const CompanyLogos = ({ currentTags, setCurrentTags }) => {
       <div className="company-logos-container-arrow-left" onClick={scrollLeft}>
         <i className="fas fa-chevron-left"></i>
       </div>
-
       <div className="company-logos-container-arrow-right" onClick={scrollRight}>
         <i className="fas fa-chevron-right"></i>
       </div>
