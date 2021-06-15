@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
+import ReactGa from "react-ga";
+
 import "./app.css";
 import "../../App.css";
 
@@ -6,6 +8,14 @@ import AboutMeSection from "./section/AboutMeSection";
 import ContactMe from "./contact-me/ContactMe";
 
 const AboutMePage = ({ showAboutMe, setShowAboutMe }) => {
+  useEffect(() => {
+    ReactGa.initialize("G-3NF43NTEZV");
+
+    //monitor page views
+    ReactGa.pageview("/");
+    ReactGa.pageview("/my-work");
+  }, []);
+
   const scrollToContactMe = () => {
     let contactMe = document.getElementById("contact-me-holder").getBoundingClientRect().top;
     document.getElementsByClassName("about-me")[0].scroll(0, contactMe);

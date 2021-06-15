@@ -9,6 +9,7 @@ import AboutMePage from "./components/about-me-page/AboutMePage";
 import MyWorkPage from "./components/my-work-page/MyWorkPage";
 
 function App() {
+  //Google analytics
   useEffect(() => {
     ReactGa.initialize("G-3NF43NTEZV");
 
