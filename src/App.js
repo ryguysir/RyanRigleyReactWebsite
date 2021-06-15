@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import ReactGa from "react-ga";
 import "./App.css";
 
 //import components
@@ -8,6 +9,13 @@ import AboutMePage from "./components/about-me-page/AboutMePage";
 import MyWorkPage from "./components/my-work-page/MyWorkPage";
 
 function App() {
+  useEffect(() => {
+    ReactGa.initialize("G-3NF43NTEZV");
+
+    //monitor page views
+    ReactGa.pageview("/");
+    ReactGa.pageview("/my-work");
+  }, []);
   //states
   const [currentTags, setCurrentTags] = useState([]);
   const [videoPanelObject, setVideoPanelObject] = useState({

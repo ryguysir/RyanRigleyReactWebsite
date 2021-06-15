@@ -5,8 +5,6 @@ import "../../../App.css";
 const BackgroundVideo = ({ vidOrImage, vidSrc }) => {
   return (
     <div>
-      {console.log(vidSrc)}
-
       <video
         className={`about-me-video ${vidOrImage ? "" : "hidden"}`}
         tabIndex="0"
