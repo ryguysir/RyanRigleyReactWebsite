@@ -14,7 +14,7 @@ import ProjectPage from "./components/my-work-page/project-components/project-pa
 function App() {
   //Google analytics
   useEffect(() => {
-    ReactGa.initialize("G-3NF43NTEZV");
+    ReactGa.initialize("UA-182344202-1");
     //monitor page views
     ReactGa.pageview("/");
     ReactGa.pageview("/my-work");
