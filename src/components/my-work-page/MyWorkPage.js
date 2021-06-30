@@ -9,7 +9,6 @@ import Tag from "./tags/Tag";
 import Project from "./project-components/project/Project";
 import SearchBttn from "./search/SearchBttn";
 import SearchForm from "./search/SearchForm";
-import VideoPanel from "./project-components/video-panel/VideoPanel";
 import CompanyLogos from "./company-logos/CompanyLogos";
 
 const MyWorkPage = ({ currentTags, setCurrentTags, videoPanelObject, setVideoPanelObject }) => {
@@ -65,13 +64,6 @@ const MyWorkPage = ({ currentTags, setCurrentTags, videoPanelObject, setVideoPan
 
   return (
     <div className="my-work">
-      {/*_____________________________video panel _____________________________ */}
-      <VideoPanel
-        videoPanelObject={videoPanelObject}
-        setVideoPanelObject={setVideoPanelObject}
-        key={"videoPanel"}
-      />
-
       {/*__________________________about me button______________________________*/}
       <Link to="/">
         <div
@@ -111,16 +103,18 @@ const MyWorkPage = ({ currentTags, setCurrentTags, videoPanelObject, setVideoPan
       {/*_____________________________projects____________________________________*/}
       <div className={`project-holder ${currentTags.length < 1 ? "hidden" : ""}`}>
         {projectTagSort().map((project) => (
-          <Project
-            key={project.projectTitle}
-            award={project.award}
-            projectTitle={project.projectTitle}
-            projectText={project.projectText}
-            imgSrc={project.imgSrc}
-            projectVideos={project.projectVideos}
-            videoPanelObject={videoPanelObject}
-            setVideoPanelObject={setVideoPanelObject}
-          />
+          <Link key={Math.random() * 100} to={`/my-work/${project.projectTitle}`}>
+            <Project
+              key={project.projectTitle}
+              award={project.award}
+              projectTitle={project.projectTitle}
+              projectText={project.projectText}
+              imgSrc={project.imgSrc}
+              projectVideos={project.projectVideos}
+              videoPanelObject={videoPanelObject}
+              setVideoPanelObject={setVideoPanelObject}
+            />
+          </Link>
         ))}
       </div>
 

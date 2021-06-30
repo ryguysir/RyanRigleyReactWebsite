@@ -9,6 +9,7 @@ import "./App.css";
 //import components
 import AboutMePage from "./components/about-me-page/AboutMePage";
 import MyWorkPage from "./components/my-work-page/MyWorkPage";
+import ProjectPage from "./components/my-work-page/project-components/project-page/ProjectPage";
 
 function App() {
   //Google analytics
@@ -35,11 +36,22 @@ function App() {
 
           <Route
             path="/my-work"
+            exact
             render={(props) => (
               <MyWorkPage
                 {...props}
                 currentTags={currentTags}
                 setCurrentTags={setCurrentTags}
+                videoPanelObject={videoPanelObject}
+                setVideoPanelObject={setVideoPanelObject}
+              />
+            )}
+          />
+          <Route
+            path="/my-work/:title"
+            render={(props) => (
+              <ProjectPage
+                {...props}
                 videoPanelObject={videoPanelObject}
                 setVideoPanelObject={setVideoPanelObject}
               />

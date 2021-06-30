@@ -20,11 +20,10 @@ const Project = ({
     if (videoPanelObject.hidden === true) {
       setVideoPanelObject({
         ...videoPanelObject,
-        hidden: !videoPanelObject.hidden,
         videos: projectVideos,
       });
     } else {
-      setVideoPanelObject({ ...videoPanelObject, hidden: !videoPanelObject.hidden, videos: [] });
+      setVideoPanelObject({ ...videoPanelObject, videos: [] });
     }
     return;
   };

@@ -116,6 +116,13 @@ a {
     background: rgba(0, 193, 103, 0.521);
     user-select: none;
   }
+  .return-to-projects:hover {
+    border-left: var(--limeGreen) 2px solid;
+    border-right: var(--limeGreen) 2px solid;
+    border-top: var(--limeGreen) 2px solid;
+    background: rgba(0, 193, 103, 0.521);
+    user-select: none;
+  }
 
   .company-logo-holder:hover .company-logo-object {
     opacity: 1;
