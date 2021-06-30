@@ -1,0 +1,134 @@
+/* Video Panel _________________________ */
+
+.project-page-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.project-page-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: blur(40px) grayscale(0.5) contrast(0.75);
+}
+
+.video-panel {
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  min-width: 75%;
+  min-height: 65%;
+  padding: 2%;
+  background: linear-gradient(0deg, #1d3042, #48525c);
+
+  display: grid;
+  grid-template-rows: 1fr 4fr 1fr;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+.video-panel-iframe {
+  transition: all 1s ease-in-out;
+  width: 100%;
+  height: 100%;
+  grid-row: 2;
+}
+.video-panel-iframe iframe {
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  border: none;
+}
+.video-bttn-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  align-content: center;
+  align-items: center;
+  grid-row: 3;
+}
+.video-next-bttn {
+  width: 100px;
+  height: 50px;
+  color: var(--main-text-color);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center;
+  font-size: 150%;
+  user-select: none;
+  cursor: pointer;
+}
+.video-previous-bttn {
+  width: 150px;
+  height: 50px;
+  color: var(--main-text-color);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center;
+  font-size: 150%;
+  user-select: none;
+  cursor: pointer;
+}
+.video-panel-number {
+  color: rgb(148, 148, 148);
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.project-share-container {
+  display: flex;
+  justify-content: space-around;
+}
+.project-share-container svg {
+  transform: scale(0.5);
+}
+
+/* .return-to-projects {
+  text-align: center;
+  position: relative;
+  z-index: 200;
+  cursor: pointer;
+  font-size: 100%;
+  color: rgb(182, 182, 182);
+  grid-row: 1;
+} */
+.return-to-projects {
+  position: relative;
+  margin: 10px auto;
+  width: 200px;
+  transition: all 0.25s ease-in;
+  color: var(--main-text-color);
+  background: rgba(0, 193, 103, 0.281);
+  overflow: hidden;
+  padding: 0.5em;
+
+  border-radius: 4px;
+  border-left: transparent 2px solid;
+  border-right: transparent 2px solid;
+  border-top: var(--limeGreen) 2px solid;
+  border-bottom: var(--limeGreen) 2px solid;
+
+  cursor: pointer;
+  text-align: center;
+  white-space: nowrap;
+  font-weight: 500;
+  user-select: none;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Globals _________________________*/
+.hidden {
+  display: none;
+}
