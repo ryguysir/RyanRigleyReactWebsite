@@ -305,6 +305,7 @@ imagineCup21.projectTags = [
   "2021",
   "build",
   "browse all",
+  "favorites",
 ];
 imagineCup21.projectVideos = ["569683335"];
 projects.push(imagineCup21);
@@ -1049,7 +1050,7 @@ skypeMeetNow.projectTags = [
   "corporate",
   "Skype Meet Now",
   "browse all",
-  "favorites",
+
   "microsoft",
   "holiday",
   "covid",
