@@ -12,20 +12,31 @@
   filter: blur(40px) grayscale(0.5) contrast(0.75);
 }
 
+.project-page-container {
+  overflow: hidden;
+  position: relative;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  z-index: 10;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
 .video-panel {
   overflow: hidden;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  position: relative;
   z-index: 10;
-  min-width: 75%;
-  min-height: 65%;
   padding: 2%;
-  background: linear-gradient(0deg, #1d3042, #48525c);
-
+  background: linear-gradient(0deg, #142230 30%, #48525c 70%);
+  min-width: 75%;
+  max-width: 90%;
   display: grid;
   grid-template-rows: 1fr 4fr 1fr;
+  gap: 20px;
   grid-template-columns: 1fr;
   justify-items: center;
   justify-content: center;
@@ -33,6 +44,11 @@
   align-items: center;
   border-radius: 10px;
 }
+.project-page-disqus {
+  margin-top: 10%;
+  width: 100%;
+}
+
 .video-panel-iframe {
   transition: all 1s ease-in-out;
   width: 100%;

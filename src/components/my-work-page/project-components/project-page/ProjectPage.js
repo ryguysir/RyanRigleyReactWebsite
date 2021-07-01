@@ -2,8 +2,8 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Fade from "react-reveal/Fade";
-import { FacebookShareButton, TwitterShareButton } from "react-share";
-import { FacebookIcon, TwitterIcon } from "react-share";
+
+import Disqus from "disqus-react";
 
 //import css
 import "./app.css";
@@ -19,6 +19,14 @@ const ProjectPage = ({ match }) => {
 
   //current video number state
   const [vidNumber, setVidNumber] = useState(0);
+
+  //set up disquss panel
+  const disqusShortname = "ryan-rigley";
+  const disqusConfig = {
+    url: window.location.origin,
+    identifier: projectInfo[0].projectVideos[0],
+    title: projectInfo[0]?.projectTitle,
+  };
 
   //functions
   const nextVid = () => {
@@ -46,49 +54,41 @@ const ProjectPage = ({ match }) => {
           />
         </div>
       </Fade>
-      <Fade cascade left>
-        <div className="video-panel">
-          <Link to="/my-work">
-            <div className="return-to-projects">
-              <p>Return to projects</p>
+      <div className="project-page-container">
+        <Fade cascade left>
+          <div className="video-panel">
+            <Link to="/my-work">
+              <div className="return-to-projects">
+                <p>Return to projects</p>
+              </div>
+            </Link>
+            <div className="video-panel-iframe">
+              <ProjectVideo videoSrc={projectInfo[0].projectVideos[vidNumber]} />
             </div>
-          </Link>
-          <div className="video-panel-iframe">
-            <ProjectVideo videoSrc={projectInfo[0].projectVideos[vidNumber]} />
+            <div className="video-bttn-container">
+              <div className="video-previous-bttn" onClick={previousVid}>
+                <i className="fas fa-chevron-left"></i>
+                Previous
+              </div>
+              <div className="video-panel-number">
+                {`${vidNumber + 1} of ${projectInfo[0].projectVideos.length}`}
+              </div>
+              <div className="video-next-bttn" onClick={nextVid}>
+                Next
+                <i className="fas fa-chevron-right"></i>
+              </div>
+            </div>
+
+            <div className="project-page-disqus">
+              <Disqus.DiscussionEmbed
+                key={projectInfo[0]?.projectTitle}
+                shortname={disqusShortname}
+                config={disqusConfig}
+              />
+            </div>
           </div>
-          <div className="video-bttn-container">
-            <div className="video-previous-bttn" onClick={previousVid}>
-              <i className="fas fa-chevron-left"></i>
-              Previous
-            </div>
-            <div className="video-panel-number">
-              {`${vidNumber + 1} of ${projectInfo[0].projectVideos.length}`}
-            </div>
-            <div className="video-next-bttn" onClick={nextVid}>
-              Next
-              <i className="fas fa-chevron-right"></i>
-            </div>
-          </div>
-          <div className="project-share-container">
-            <FacebookShareButton
-              key={Math.random() * 100}
-              url={`ryanrigley.com${match.url}`}
-              quote={"Check out this video made by Ryan Rigley"}
-              hashtag="#ryanrigley"
-            >
-              <FacebookIcon round={true}></FacebookIcon>
-            </FacebookShareButton>
-            <TwitterShareButton
-              key={Math.random() * 100}
-              url={`ryanrigley.com${match.url}`}
-              quote={"Check out this video made by Ryan Rigley"}
-              hashtag="#ryanrigley"
-            >
-              <TwitterIcon round={true}></TwitterIcon>
-            </TwitterShareButton>
-          </div>
-        </div>
-      </Fade>
+        </Fade>
+      </div>
     </>
   );
 };

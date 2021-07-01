@@ -293,6 +293,24 @@ projects.push(indigoSlateEverywhereExperiences);
 
 //___________________________________________________________________________________
 
+let imagineCup21 = new ProjectObject();
+imagineCup21.projectTitle = "Imagine Cup 2021";
+imagineCup21.projectText = "Editor";
+imagineCup21.imgSrc = "images/ImagineCup21.jpg";
+imagineCup21.projectTags = [
+  "microsoft",
+  "corporate",
+  "convention",
+  "imagine cup 2021",
+  "2021",
+  "build",
+  "browse all",
+];
+imagineCup21.projectVideos = ["569683335"];
+projects.push(imagineCup21);
+
+//___________________________________________________________________________________
+
 let jackRyan = new ProjectObject();
 jackRyan.projectTitle = "Jack Ryan Shadow Recruit";
 jackRyan.projectText = "Editor";
