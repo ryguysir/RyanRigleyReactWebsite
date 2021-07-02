@@ -19,6 +19,7 @@ const ProjectPage = ({ match }) => {
 
   //current video number state
   const [vidNumber, setVidNumber] = useState(0);
+  const [disqusReveal, setDisqusReveal] = useState(false);
 
   //set up disquss panel
   const disqusShortname = "ryan-rigley";
@@ -89,7 +90,16 @@ const ProjectPage = ({ match }) => {
               </div>
             </div>
 
-            <div className="project-page-disqus">
+            <div
+              className="project-page-disqus-reveal"
+              onClick={() => {
+                setDisqusReveal(!disqusReveal);
+              }}
+            >
+              <i className=""></i> Comments
+              <i className={`${disqusReveal ? "fas fa-chevron-down" : "far fa-comment"}`}></i>
+            </div>
+            <div className={`project-page-disqus ${disqusReveal ? "" : "hidden"}`}>
               <Disqus.DiscussionEmbed
                 key={projectInfo[0]?.projectTitle}
                 shortname={disqusShortname}
