@@ -305,7 +305,7 @@ imagineCup21.projectTags = [
   "2021",
   "build",
   "browse all",
-  "favorites",
+  "favorit es",
 ];
 imagineCup21.projectVideos = ["569683335"];
 projects.push(imagineCup21);

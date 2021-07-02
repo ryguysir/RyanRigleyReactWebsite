@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Fade from "react-reveal/Fade";
-
+import MetaTags from "react-meta-tags";
 import Disqus from "disqus-react";
 
 //import css
@@ -46,6 +46,16 @@ const ProjectPage = ({ match }) => {
 
   return (
     <>
+      <MetaTags>
+        <title>{projectInfo[0].projectTitle}</title>
+        <meta
+          id="meta-description"
+          name="description"
+          content={`${projectInfo[0].projectTitle} videos created by Ryan Rigley`}
+        />
+        <meta id="og-title" property="og:title" content={`${projectInfo[0].projectTitle}`} />
+        <meta id="og-image" property="og:image" content={`${projectInfo[0].imgSrc}`} />
+      </MetaTags>
       <Fade>
         <div className="project-page-bg">
           <img
