@@ -23,7 +23,14 @@ amazonCxLabs.projectTags = [
   "amazon",
   "favorites",
 ];
-amazonCxLabs.projectVideos = ["569695873", "555046250", "555045189", "555047791"];
+amazonCxLabs.projectVideos = [
+  "582369174",
+  "582369670",
+  "569695873",
+  "555046250",
+  "555045189",
+  "555047791",
+];
 projects.push(amazonCxLabs);
 
 //___________________________________________________________________________________
