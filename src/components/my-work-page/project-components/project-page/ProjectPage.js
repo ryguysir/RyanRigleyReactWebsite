@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Fade from "react-reveal/Fade";
 import MetaTags from "react-meta-tags";
-import Disqus from "disqus-react";
+// import Disqus from "disqus-react";
 
 //import css
 import "./app.css";
@@ -19,15 +19,15 @@ const ProjectPage = ({ match }) => {
 
   //current video number state
   const [vidNumber, setVidNumber] = useState(0);
-  const [disqusReveal, setDisqusReveal] = useState(false);
+  // const [disqusReveal, setDisqusReveal] = useState(false);
 
   //set up disquss panel
-  const disqusShortname = "ryan-rigley";
-  const disqusConfig = {
-    url: window.location.origin,
-    identifier: projectInfo[0].projectVideos[0],
-    title: projectInfo[0]?.projectTitle,
-  };
+  // const disqusShortname = "ryan-rigley";
+  // const disqusConfig = {
+  //   url: window.location.origin,
+  //   identifier: projectInfo[0].projectVideos[0],
+  //   title: projectInfo[0]?.projectTitle,
+  // };
 
   //functions
   const nextVid = () => {
@@ -79,18 +79,16 @@ const ProjectPage = ({ match }) => {
             <div className="video-bttn-container">
               <div className="video-previous-bttn" onClick={previousVid}>
                 <i className="fas fa-chevron-left"></i>
-                Previous
               </div>
               <div className="video-panel-number">
                 {`${vidNumber + 1} of ${projectInfo[0].projectVideos.length}`}
               </div>
               <div className="video-next-bttn" onClick={nextVid}>
-                Next
                 <i className="fas fa-chevron-right"></i>
               </div>
             </div>
 
-            <div
+            {/* <div
               className="project-page-disqus-reveal"
               onClick={() => {
                 setDisqusReveal(!disqusReveal);
@@ -98,14 +96,14 @@ const ProjectPage = ({ match }) => {
             >
               <i className=""></i> Comments
               <i className={`${disqusReveal ? "fas fa-chevron-down" : "far fa-comment"}`}></i>
-            </div>
-            <div className={`project-page-disqus ${disqusReveal ? "" : "hidden"}`}>
+            </div> */}
+            {/* <div className={`project-page-disqus ${disqusReveal ? "" : "hidden"}`}>
               <Disqus.DiscussionEmbed
                 key={projectInfo[0]?.projectTitle}
                 shortname={disqusShortname}
                 config={disqusConfig}
               />
-            </div>
+            </div> */}
           </div>
         </Fade>
       </div>
