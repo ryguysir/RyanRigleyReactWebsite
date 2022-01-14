@@ -24,6 +24,8 @@ amazonCxLabs.projectTags = [
   "favorites",
 ];
 amazonCxLabs.projectVideos = [
+  "665866362",
+  "665865169",
   "582369174",
   "582369670",
   "569695873",
