@@ -76,17 +76,21 @@ const ProjectPage = ({ match }) => {
             <div className="video-panel-iframe">
               <ProjectVideo videoSrc={projectInfo[0].projectVideos[vidNumber]} />
             </div>
-            <div className="video-bttn-container">
-              <div className="video-previous-bttn" onClick={previousVid}>
-                <i className="fas fa-chevron-left"></i>
+            {vidNumber <= 1 ? (
+              <div className="video-bttn-container">
+                <div className="video-previous-bttn" onClick={previousVid}>
+                  <i className="fas fa-chevron-left"></i>
+                </div>
+                <div className="video-panel-number">
+                  {`${vidNumber + 1} of ${projectInfo[0].projectVideos.length}`}
+                </div>
+                <div className="video-next-bttn" onClick={nextVid}>
+                  <i className="fas fa-chevron-right"></i>
+                </div>
               </div>
-              <div className="video-panel-number">
-                {`${vidNumber + 1} of ${projectInfo[0].projectVideos.length}`}
-              </div>
-              <div className="video-next-bttn" onClick={nextVid}>
-                <i className="fas fa-chevron-right"></i>
-              </div>
-            </div>
+            ) : (
+              <div></div>
+            )}
 
             {/* <div
               className="project-page-disqus-reveal"

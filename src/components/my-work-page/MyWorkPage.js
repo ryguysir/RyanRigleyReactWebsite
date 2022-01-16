@@ -105,8 +105,7 @@ const MyWorkPage = ({ currentTags, setCurrentTags, videoPanelObject, setVideoPan
         <div className={`disclaimer-container ${currentTags.length < 1 ? "" : "hidden"}`}>
           <Fade top cascade>
             <i className="fas fa-chevron-up"></i>
-            <div className="disclaimer">Select tags from above and logos from below</div>
-            <i className="fas fa-chevron-down"></i>
+            <div className="disclaimer">Select tags from above to see content</div>
           </Fade>
         </div>
 
