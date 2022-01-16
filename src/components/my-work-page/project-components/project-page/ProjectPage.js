@@ -76,7 +76,9 @@ const ProjectPage = ({ match }) => {
             <div className="video-panel-iframe">
               <ProjectVideo videoSrc={projectInfo[0].projectVideos[vidNumber]} />
             </div>
-            {vidNumber <= 1 ? (
+            {projectInfo[0].projectVideos.length <= 1 ? (
+              <div></div>
+            ) : (
               <div className="video-bttn-container">
                 <div className="video-previous-bttn" onClick={previousVid}>
                   <i className="fas fa-chevron-left"></i>
@@ -88,8 +90,6 @@ const ProjectPage = ({ match }) => {
                   <i className="fas fa-chevron-right"></i>
                 </div>
               </div>
-            ) : (
-              <div></div>
             )}
 
             {/* <div
