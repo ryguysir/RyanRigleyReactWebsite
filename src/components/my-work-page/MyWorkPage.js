@@ -9,7 +9,7 @@ import Tag from "./tags/Tag";
 import Project from "./project-components/project/Project";
 import SearchBttn from "./search/SearchBttn";
 import SearchForm from "./search/SearchForm";
-import CompanyLogos from "./company-logos/CompanyLogos";
+// import CompanyLogos from "./company-logos/CompanyLogos";
 
 const MyWorkPage = ({ currentTags, setCurrentTags, videoPanelObject, setVideoPanelObject }) => {
   //variables
@@ -66,7 +66,11 @@ const MyWorkPage = ({ currentTags, setCurrentTags, videoPanelObject, setVideoPan
     <>
       <MetaTags>
         <title>Projects by Ryan Rigley</title>
-        <meta id="meta-description" name="description" content="using tags, look through the projects created by Ryan Rigley" />
+        <meta
+          id="meta-description"
+          name="description"
+          content="using tags, look through the projects created by Ryan Rigley"
+        />
         <meta id="og-title" property="og:title" content="Projects by Ryan Rigley" />
       </MetaTags>
       <div className="my-work">
@@ -79,7 +83,10 @@ const MyWorkPage = ({ currentTags, setCurrentTags, videoPanelObject, setVideoPan
             }}
           >
             <Fade top cascade>
-              <i className="fas fa-chevron-left" style={{ marginRight: 20 + "px", marginLeft: -5 + "px" }}></i>
+              <i
+                className="fas fa-chevron-left"
+                style={{ marginRight: 20 + "px", marginLeft: -5 + "px" }}
+              ></i>
               About Me
             </Fade>
           </div>
@@ -122,7 +129,7 @@ const MyWorkPage = ({ currentTags, setCurrentTags, videoPanelObject, setVideoPan
         </div>
 
         {/*___________________________company logos_____________________________*/}
-        <CompanyLogos currentTags={currentTags} setCurrentTags={setCurrentTags} />
+        {/* <CompanyLogos currentTags={currentTags} setCurrentTags={setCurrentTags} /> */}
       </div>
     </>
   );
