@@ -1069,6 +1069,16 @@ projects.push(skypeMeetNow);
 
 //___________________________________________________________________________________
 
+let sonySpec = new ProjectObject();
+sonySpec.projectTitle = "Sony Spec Ad";
+sonySpec.projectText = "Editor / Motion Graphics";
+sonySpec.imgSrc = "images/sonySpec.jpg";
+sonySpec.projectTags = ["corporate", "Sony Spec Ad", "browse all", "dance", "fun"];
+sonySpec.projectVideos = ["668848427"];
+projects.push(sonySpec);
+
+//___________________________________________________________________________________
+
 let theBoy = new ProjectObject();
 theBoy.projectTitle = "The Boy";
 theBoy.projectText = "Editor";
